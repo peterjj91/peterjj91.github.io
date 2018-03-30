@@ -6410,7 +6410,7 @@ strong {
     color: #000; }
   .btn__main {
     background-color: #333333;
-    color: #000; }
+    color: white; }
     .btn__main:hover, .btn__main:focus {
       color: white; }
 
@@ -6534,16 +6534,22 @@ input, textarea {
     color: rgba(151, 151, 151, 0.27); }
   .input:-moz-placeholder {
     color: rgba(151, 151, 151, 0.27); }
-  .input--mark {
-    padding-right: 30px;
-    background: url(../img/mark.png);
-    background-position: center right 13px;
-    background-repeat: no-repeat; }
-  .input--mark-error {
-    padding-right: 30px;
-    background: url(../img/mark-red.png);
-    background-position: center right 13px;
-    background-repeat: no-repeat; }
+  .input__wrapper {
+    position: relative; }
+    .input__wrapper--mark:after {
+      content: '';
+      position: absolute;
+      top: 15px;
+      right: 13px;
+      background-image: url(../img/mark.svg);
+      width: 12px;
+      height: 11px;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 2;
+      pointer-events: none; }
+    .input__wrapper--mark .input {
+      padding-right: 30px; }
 
 .styled-checkbox {
   position: absolute;
@@ -6959,6 +6965,7 @@ input, textarea {
     background-color: #333333;
     margin-top: 8px;
     height: 36px;
+    color: white;
     overflow: hidden; }
     @media (max-width: 700px) {
       .promo-item__delivery {
@@ -6967,7 +6974,7 @@ input, textarea {
         padding: 8px 8px 6px 8px; } }
     .promo-item__delivery__text {
       float: left;
-      color: #000; }
+      color: white; }
       @media (max-width: 700px) {
         .promo-item__delivery__text {
           display: table-cell;
@@ -6980,8 +6987,7 @@ input, textarea {
       float: right;
       padding: 2px 0px 0px 0px;
       font-family: "MuseoSansRegular";
-      font-size: 13px;
-      color: #000; }
+      font-size: 13px; }
       @media (max-width: 700px) {
         .promo-item__delivery__time {
           display: table-cell;
@@ -7168,7 +7174,7 @@ input, textarea {
     .promo-about__nav li {
       display: inline-block;
       vertical-align: middle;
-      margin: 0px 2px;
+      margin: 0px 17px;
       margin-bottom: 10px; }
     @media (max-width: 480px) {
       .promo-about__nav__img {
@@ -7233,7 +7239,7 @@ input, textarea {
       .promo-menu__nav li:last-child {
         margin-bottom: 0; }
     .promo-menu__nav a {
-      color: black; }
+      color: white; }
   .promo-menu__info {
     padding: 0;
     list-style: none;
@@ -7244,11 +7250,11 @@ input, textarea {
       .promo-menu__info li:last-child {
         margin-bottom: 0; }
     .promo-menu__info a {
-      color: black; }
+      color: white; }
   .promo-menu__post {
     font-size: 15px;
     line-height: 22px;
-    color: #000; }
+    color: white; }
     .promo-menu__post p:last-child {
       margin-bottom: 0; }
 
