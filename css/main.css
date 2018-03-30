@@ -6699,7 +6699,7 @@ input, textarea {
         width: 100%; } }
     @media (min-width: 1250px) {
       .header__container {
-        width: 1250px; } }
+        width: 1210px; } }
   .header__logo {
     float: left; }
     @media (max-width: 1030px) {
@@ -6771,7 +6771,7 @@ input, textarea {
         width: 100%; } }
     @media (min-width: 1250px) {
       .footer__container {
-        width: 1250px; } }
+        width: 1210px; } }
     @media (max-width: 700px) {
       .footer__container {
         padding-left: 10px;
@@ -7762,7 +7762,7 @@ input, textarea {
         width: 100%; } }
     @media (min-width: 1250px) {
       .content__container {
-        width: 1250px; } }
+        width: 1210px; } }
     .content__container--thinner {
       max-width: 1000px; }
   .content--main {
