@@ -6314,6 +6314,29 @@ select.selectpicker {
   font-weight: normal;
   font-style: normal; }
 
+.icon {
+  display: inline-block; }
+  .icon__afisha {
+    background: url("../img/afisha-logo.png");
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 116px;
+    height: 25px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
+      .icon__afisha {
+        background: url("../img/afisha-logo@2x.png"); } }
+  .icon__village {
+    background: url("../img/village-logo.png");
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 93px;
+    height: 34px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
+      .icon__village {
+        background: url("../img/village-logo@2x.png"); } }
+
 .logo {
   width: 136px;
   height: 33px;
