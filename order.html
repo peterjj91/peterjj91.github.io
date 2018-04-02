@@ -47,7 +47,7 @@
                 <a href="#" class="logo"></a>
             </div>
     
-            <a href="#" class="header__phone">
+            <a href="tel:+74953755565" class="header__phone">
                 <svg class="" width="26px" height="26px">
                     <use xlink:href="icons/icons.svg#phone"></use>
                 </svg>
@@ -66,7 +66,6 @@
             </div>
     
             <div class="header__burger">
-                <!--<a href="#right-menu" id="right-menu" class="mobile-menu"><span></span></a>-->
                 <span class="toggle-menu mobile-menu"><span></span></span>
             </div>
         </div>
@@ -79,16 +78,22 @@
                 <div class="head-h2 promo-order__title">Оформление заказа</div>
 
                 <div class="promo-order__item">
-                    <div class="promo-order__item__img">
-                        <img src="img/order-img1.jpg" alt="">
-                    </div>
+                    <div class="promo-order__item__inside">
+                        <div class="promo-order__item__img">
+                            <a href="#">
+                                <img src="img/order-img1.jpg" alt="">
+                            </a>
+                        </div>
 
-                    <div class="promo-order__item__description">
-                        <p class="promo-order__item__title">Букет розовая нежность</p>
+                        <div class="promo-order__item__description">
+                            <p class="promo-order__item__title">Букет розовая нежность</p>
 
-                        <p class="text--light promo-order__item__delivery">Доставка бесплатно</p>
+                            <div class="promo-order__item__description__text">
+                                <p class="text--light promo-order__item__delivery">Доставка бесплатно</p>
 
-                        <div class="promo-order__item__price">2 990 <span class="rub">&#8381;</span></div>
+                                <div class="promo-order__item__price">2 990 <span class="rub">₽</span></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -169,31 +174,43 @@
 
                 <ul class="promo-order__social">
                     <li>
-                        <a href="#" class="btn btn__promo promo-order__social__btn">
-                            <svg class="promo-order__social__icon">
-                                <use xlink:href="icons/icons.svg#social-telegram"></use>
-                            </svg>
+                        <div class="promo-order__social__btn styled-checkbox__block">
+                            <input class="styled-checkbox" id="add_telegram" type="checkbox" value="value1">
 
-                            <span class="promo-order__social__text">Телеграм</span>
-                        </a>
+                            <label for="add_telegram" class="">
+                                <svg class="promo-order__social__icon">
+                                    <use xlink:href="icons/icons.svg#social-telegram"></use>
+                                </svg>
+
+                                <span class="promo-order__social__text">Телеграм</span>
+                            </label>
+                        </div>
                     </li>
                     <li>
-                        <a href="#" class="btn btn__promo promo-order__social__btn">
-                            <svg class="promo-order__social__icon">
-                                <use xlink:href="icons/icons.svg#social-wtsp"></use>
-                            </svg>
+                        <div class="promo-order__social__btn styled-checkbox__block">
+                            <input class="styled-checkbox" id="add_wtsp" type="checkbox" value="value1">
 
-                            <span class="promo-order__social__text">Вотсап</span>
-                        </a>
+                            <label for="add_wtsp">
+                                <svg class="promo-order__social__icon">
+                                    <use xlink:href="icons/icons.svg#social-wtsp"></use>
+                                </svg>
+
+                                <span class="promo-order__social__text">Вотсап</span>
+                            </label>
+                        </div>
                     </li>
                     <li>
-                        <a href="#" class="btn btn__promo promo-order__social__btn">
-                            <svg class="promo-order__social__icon">
-                                <use xlink:href="icons/icons.svg#social-fb"></use>
-                            </svg>
+                        <div class="promo-order__social__btn styled-checkbox__block">
+                            <input class="styled-checkbox" id="add_fb" type="checkbox" value="value1">
 
-                            <span class="promo-order__social__text">Мессенджер</span>
-                        </a>
+                            <label for="add_fb">
+                                <svg class="promo-order__social__icon">
+                                    <use xlink:href="icons/icons.svg#social-fb"></use>
+                                </svg>
+
+                                <span class="promo-order__social__text">Мессенджер</span>
+                            </label>
+                        </div>
                     </li>
                 </ul>
 
@@ -226,13 +243,31 @@
                             </div>
 
                             <div class="styled-checkbox__block">
-                                <input class="styled-checkbox" id="styled-checkbox-11" type="checkbox" value="value1">
-                                <label for="styled-checkbox-11">Добавить вазу</label>
+                                <input class="styled-checkbox" id="add_vase" type="checkbox" value="value1">
+                                <label for="add_vase">Добавить вазу</label>
                             </div>
 
                             <div class="styled-checkbox__block">
-                                <input class="styled-checkbox" id="styled-checkbox-12" type="checkbox" value="value1">
-                                <label for="styled-checkbox-12">Добавить записку</label>
+                                <input class="styled-checkbox" id="add_comment" type="checkbox" value="value1">
+                                <label for="add_comment">Добавить записку</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promo-order__optional">
+                    <div class="promo-order__item">
+                        <div class="promo-order__item__img">
+                            <a href="#">
+                                <img src="img/promo-item2.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="promo-order__item__description">
+                            <p class="promo-order__item__title">Букет розовая нежность</p>
+
+                            <div class="promo-order__item__description__text">
+                                <div class="promo-order__item__price">+2 990 <span class="rub">₽</span></div>
                             </div>
                         </div>
                     </div>
@@ -305,6 +340,38 @@
                     <div class="popup-promo__btn">
                         <a href="#" class="btn btn__main">Заказать</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="popup-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog--mini">
+        <div class="modal-content">
+            <div class="popup-promo popup-promo--login">
+                <div class="popup-promo__close mobile-menu active" data-dismiss="modal" aria-hidden="true">
+                        <span></span>
+                    </div>
+
+                <div class="popup-promo__content">
+                    <p class="popup-promo__text">Скажите куда вы доставить цветы, мы покажем ближайшее время доставки каждого букета</p>
+
+                    <ul class="modal-login">
+                        <li>
+                            <a href="#" class="btn btn__main">Внутри садового</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn__main">От садового до ТТК</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn__main">От ТТК до МКАД</a>
+                        </li>
+                    </ul>
+
+                    <p class="popup-promo__text popup-promo__text--mini">Доставка за МКАД :(</p>
+
+                    <a href="#" class="btn btn__promo">Не хочу выбирать</a>
                 </div>
             </div>
         </div>
