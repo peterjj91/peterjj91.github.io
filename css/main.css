@@ -7362,7 +7362,8 @@ input, textarea, button {
     left: 50%; }
 
 .popup-promo__slider {
-  height: 520px; }
+  height: 520px;
+  background-color: #CECECE; }
   @media (max-width: 1030px) {
     .popup-promo__slider {
       height: 530px; } }
@@ -8147,10 +8148,13 @@ input, textarea, button {
   .promo-product__img {
     height: 100%;
     position: relative;
-    background: #CECECE; }
+    text-align: center; }
     .promo-product__img img {
-      height: 100%;
-      margin: 0 auto; }
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      height: 100%; }
   .promo-product--simple {
     height: auto; }
     .promo-product--simple .promo-product__img img {
