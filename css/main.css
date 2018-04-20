@@ -6060,13 +6060,10 @@ select.selectpicker {
   background: #333333;
   display: block !important;
   height: 100%;
-  right: -294px;
-  /*was originally t right when the nav bar was on the right side*/
   z-index: 100;
-  text-align: center;
   transition: right 0.1s;
   /** default on the right **/
-  overflow-y: auto;
+  overflow-y: hidden;
   /* makes the expanding nav scrollable */ }
 
 .slideout-menu-left {
@@ -6485,6 +6482,9 @@ strong {
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
     border: none;
     max-height: none !important; }
+    @media (max-width: 480px) {
+      .bootstrap-select .dropdown-menu {
+        max-width: 100%; } }
     .bootstrap-select .dropdown-menu li {
       margin-bottom: 0px; }
       .bootstrap-select .dropdown-menu li:last-child {
@@ -6597,9 +6597,14 @@ input, textarea, button {
   .styled-checkbox + label {
     position: relative;
     cursor: pointer;
-    padding: 0; }
+    padding: 0;
+    padding-left: 35px;
+    padding-top: 3px; }
   .styled-checkbox + label:before {
     content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
     margin-right: 10px;
     display: inline-block;
     vertical-align: bottom;
@@ -6628,7 +6633,8 @@ input, textarea, button {
 .promo-tooltip--question {
   display: inline-block;
   vertical-align: bottom;
-  margin-left: 5px; }
+  margin-left: 5px;
+  font-size: 0; }
 
 .star-ratings-css {
   unicode-bidi: bidi-override;
@@ -6843,7 +6849,7 @@ input, textarea, button {
   @media (max-width: 700px) {
     .promo-main {
       padding-top: 90px;
-      height: 812px;
+      height: 530px;
       margin-bottom: 0; } }
   .promo-main__img {
     position: absolute;
@@ -7816,14 +7822,14 @@ input, textarea, button {
   max-width: 721px;
   margin: 0 auto;
   background: #FFFFFF;
-  box-shadow: 0 20px 40px 0 rgba(51, 51, 51, 0.35);
   padding: 25px 63px 25px 63px; }
   @media (max-width: 1030px) {
     .promo-order {
-      padding-top: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 20px; } }
+      padding-top: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      box-shadow: none; } }
   .promo-order__title {
     margin-bottom: 35px; }
     @media (max-width: 700px) {
@@ -7913,7 +7919,8 @@ input, textarea, button {
       margin-bottom: 0; }
     .promo-order__item__price {
       font-family: "MuseoSansBold";
-      font-size: 25px; }
+      font-size: 25px;
+      font-weight: bold; }
   .promo-order__map {
     width: 100%;
     margin-bottom: 15px; }
@@ -8034,10 +8041,7 @@ input, textarea, button {
     .promo-order__optional--active {
       display: block; }
   .promo-order__comment {
-    display: none;
     margin-top: 37px; }
-    .promo-order__comment--active {
-      display: block; }
     .promo-order__comment .textarea {
       width: 100%;
       resize: none;
@@ -8083,6 +8087,9 @@ input, textarea, button {
       max-width: 1000px; }
   .content--background {
     background-color: #F7F7F7; }
+    @media (max-width: 1030px) {
+      .content--background {
+        background-color: white; } }
   .content--main {
     padding-top: 0; }
 

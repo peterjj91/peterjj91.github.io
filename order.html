@@ -18,7 +18,7 @@
         }
     </style>
     <div class="promo-menu__burger">
-        <span class="toggle-menu mobile-menu mobile-menu--white active"><span></span></span>
+        <span class="toggle-menu--inside mobile-menu mobile-menu--white active"><span></span></span>
     </div>
 
     <ul class="promo-menu__nav">
@@ -70,7 +70,7 @@
         </div>
     </div>
 
-    <div class="content content--background">
+    <div class="content">
         <div class="content__container content__container--thinner">
 
             <div class="promo-order">
@@ -136,7 +136,7 @@
                         <div class="head-h3 promo-order__delivery__title">Когда доставить</div>
 
                         <div class="promo-order__row">
-                            <div class="promo-order__block">
+                            <div class="promo-order__block promo-order__block--full">
                                 <select class="selectpicker">
                                     <option value="">Сейчас (45-60 минут, ~19:00, 14 янв.)</option>
                                     <option value="">Сейчас (45-60 минут, ~19:00, 14 янв.)</option>
@@ -235,10 +235,10 @@
                                 <label for="styled-checkbox-10">Это сюрприз</label>
 
                                 <span class="promo-tooltip promo-tooltip--question" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top">
-                                <svg class="" width="23px" height="23px">
-                                    <use xlink:href="icons/icons.svg#question"></use>
-                                </svg>
-                            </span>
+                                    <svg class="" width="23px" height="23px">
+                                        <use xlink:href="icons/icons.svg#question"></use>
+                                    </svg>
+                                </span>
                             </div>
 
                             <div class="styled-checkbox__block">
@@ -249,6 +249,13 @@
                             <div class="styled-checkbox__block">
                                 <input class="styled-checkbox" id="add_comment" type="checkbox" value="value1">
                                 <label for="add_comment">Добавить записку</label>
+                            </div>
+                        </div>
+
+                        <div class="promo-order__block promo-order__block--full hidden" id="write_comment">
+                            <div class="styled-checkbox__block">
+                                <input class="styled-checkbox" id="check_comment" type="checkbox" value="value8">
+                                <label for="check_comment">Придумайте вместо меня!</label>
                             </div>
                         </div>
                     </div>
@@ -272,8 +279,12 @@
                     </div>
                 </div>
 
+                <div class="promo-order__comment hidden" id="write_note">
+                    <textarea class="textarea" placeholder="Текст записки"></textarea>
+                </div>
+
                 <div class="promo-order__comment">
-                    <textarea class="textarea">Комментарий к заказу</textarea>
+                    <textarea class="textarea" placeholder="Комментарий к заказу" maxlength="400"></textarea>
                 </div>
 
                 <div class="promo-order__submit">
