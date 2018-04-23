@@ -28655,6 +28655,16 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+    $('#revify-phone').change(function(){
+        if($(this).is(":checked")) {
+            $('.promo-order__social').removeClass("hidden");
+        } else {
+            $('.promo-order__social').addClass("hidden");
+        }
+    });
+});
+
+$(document).ready(function() {
     $('#add_vase').change(function(){
         if($(this).is(":checked")) {
             $('.promo-order__optional').addClass("promo-order__optional--active");
