@@ -32095,13 +32095,20 @@ $(document).ready(function() {
     });
 });
 
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+
 $(document).ready(function () {
-    $("#range_48").ionRangeSlider({
-        type: "double",
-        min: 0,
-        max: 100,
-        from: 20,
-        to: 80,
-        postfix: " руб",
-    });
+    // $("#range_48").ionRangeSlider({
+    //     type: "double",
+    //     min: 0,
+    //     max: 100,
+    //     from: 20,
+    //     to: 80,
+    //     postfix: " руб",
+    // });
 });

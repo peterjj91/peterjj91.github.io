@@ -7667,7 +7667,10 @@ input {
     .header__catalog li {
       width: 100%;
       max-width: 200px;
-      text-align: center; }
+      text-align: center;
+      transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
+      .header__catalog li:hover {
+        opacity: 0.7; }
     .header__catalog__icon {
       display: table;
       width: 100%;
