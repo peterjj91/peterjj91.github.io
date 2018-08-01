@@ -6,973 +6,702 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
 </head>
 <body>
-<nav id="menu-body" class="promo-menu">
-    <style>
-        .promo-menu {
-            display: none;
-        }
-    </style>
-    <div class="promo-menu__burger">
-        <span class="toggle-menu--inside mobile-menu mobile-menu--white active"><span></span></span>
-    </div>
-
-    <ul class="promo-menu__nav">
-        <li><a href="#">Букеты</a></li>
-        <li><a href="#">Экспресс-доставка</a></li>
-        <li><a href="#">Подписка</a></li>
-        <li><a href="#">Доставка</a></li>
-    </ul>
-
-    <ul class="promo-menu__info">
-        <li><a href="#">Оплата</a></li>
-        <li><a href="#">Политика конфиденциальности</a></li>
-        <li><a href="#">Обработка персональных данных</a></li>
-        <li><a href="#">Контакты</a></li>
-    </ul>
-
-    <div class="promo-menu__post">
-        <p>©2018 Germen. Использование материалов сайта возможно только при наличии активной ссылки на первоисточник.</p>
-    </div>
-</nav>
-
 <main id="panel-body">
     <div class="header">
         <div class="header__container">
-            <div class="header__logo">
-                <a href="#" class="logo"></a>
+            <div class="header__top">
+                <div class="header__logo">
+                    <a href="#" class="header__logo__img"><img src="img/logo.png" alt=""></a>
+
+                    <div class="header__logo__text">Запчасти, ремонт и обслуживание китайской спецтехники</div>
+                </div>
+
+                <div class="header__info">
+                    <ul class="header__tel">
+                        <li>
+                            <a href="tel:88007753827">8 (800) 775-38-27</a>
+                        </li>
+                        <li>
+                            <a href="tel:88312610353">8 (831) 261-03-53</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__basket">
+                        <div class="basket-mini">
+                            <span class="basket-mini__icon">
+                                <span class="icon icon__basket"></span>
+                            </span>
+                            <input type="text" class="basket-mini__input" placeholder="" value="2500">
+                            <span class="basket-mini__currency">
+                                <span class="rouble"></span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="header__cabinet">Личный кабинет</a>
+                </div>
             </div>
-    
-            <a href="tel:+74953755565" class="header__phone">
-                <svg class="" width="26px" height="26px">
-                    <use xlink:href="icons/icons.svg#phone"></use>
-                </svg>
-            </a>
-    
-            <div class="header__content">
-                <div class="header__nav" id="header-nav">
-                    <ul class="nav">
-                        <li><a href="#">Букеты</a></li>
-                        <li><a href="#">Подписка</a></li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="tel:+74953755565"> +7 (495) 375-55-65</a></li>
+
+            <div class="header__nav__wrapper">
+                <ul class="header__nav">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Каталог запчастей</a></li>
+                    <li><a href="#">Ремонт</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul>
+            </div>
+
+            <div class="header__search">
+                <div class="search-main">
+                    <input type="text" class="search-main__input" placeholder="Поиск по сайту">
+
+                    <button class="search-main__btn">
+                        <span class="icon icon__search"></span>
+                    </button>
+                </div>
+            </div>
+            
+            <ul class="header__catalog">
+                <li>
+                    <div class="header__catalog__icon">
+                        <div class="header__catalog__icon__wrapper">
+                            <div class="icon icon__tube"></div>
+                        </div>
+                    </div>
+                    <div class="header__catalog__description">
+                        <div class="header__catalog__description__text">
+                            <div class="header__catalog__text header__catalog__text--mini">Запчасти для</div>
+                            <div class="header__catalog__text">ДИЗЕЛЬНЫХ И ГАЗОВЫХ ДВИГАТЕЛЕЙ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="header__catalog__icon">
+                        <div class="header__catalog__icon__wrapper">
+                            <div class="icon icon__loaders"></div>
+                        </div>
+                    </div>
+                    <div class="header__catalog__description">
+                        <div class="header__catalog__description__text">
+                            <div class="header__catalog__text header__catalog__text--mini">Запчасти для</div>
+                            <div class="header__catalog__text">ФРОНТАЛЬНЫХ ПОГРУЗЧИКОВ SDLG</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="header__catalog__icon">
+                        <div class="header__catalog__icon__wrapper">
+                            <div class="icon icon__front-loaders"></div>
+                        </div>
+                    </div>
+                    <div class="header__catalog__description">
+                        <div class="header__catalog__description__text">
+                            <div class="header__catalog__text">ШАРНИРЫ СОЕДИНЕНИЯ ФРОНТАЛЬНЫХ ПОГРУЗЧИКОВ SDLG</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="header__catalog__icon">
+                        <div class="header__catalog__icon__wrapper">
+                            <div class="icon icon__gearbox"></div>
+                        </div>
+                    </div>
+                    <div class="header__catalog__description">
+                        <div class="header__catalog__description__text">
+                            <div class="header__catalog__text header__catalog__text--mini">Запчасти для</div>
+                            <div class="header__catalog__text">ГИДРОМЕХАНИЧЕСКИХ КОРОБОК ПЕРЕДАЧ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="header__catalog__icon">
+                        <div class="header__catalog__icon__wrapper">
+                            <div class="icon icon__motor"></div>
+                        </div>
+                    </div>
+                    <div class="header__catalog__description">
+                        <div class="header__catalog__description__text">
+                            <div class="header__catalog__text">ФИЛЬТРЫ ДЛЯ ФРОНТАЛЬНЫХ ПОГРУЗЧИКОВ SDLG, ГАЗОВЫХ И ДИЗЕЛЬНЫХ ДВИГАТЕЛЕЙ</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="header__catalog__icon">
+                        <div class="header__catalog__icon__wrapper">
+                            <div class="icon icon__oil"></div>
+                        </div>
+                    </div>
+                    <div class="header__catalog__description">
+                        <div class="header__catalog__description__text">
+                            <div class="header__catalog__text">МАСЛА </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<div class="content">
+
+    <div class="content__container">
+        <div class="article-main">
+            <div class="article-main__side">
+                <div class="article-main__side__nav">
+                    <ul class="promo-nav">
+                        <li><a href="#">Двигатели</a></li>
+                        <li><a href="#">Фронтальные погрузчики</a></li>
+                        <li><a href="#">Гидромеханические коробки передач</a></li>
+                        <li><a href="#">Шарниры сочленения</a></li>
+                        <li><a href="#">Фильтры</a></li>
+                        <li><a href="#">Масло, смазка и химия для фронтальных погрузчиков</a></li>
+                    </ul>
+                </div>
+
+                <div class="promo-news">
+                    <div class="promo-news__title">Двигатели:</div>
+
+                    <ul>
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+
+                        <li>
+                            Запчасти для DONGFENG SHANGHAI серии
+                            <a href="#">SD3874</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="promo-news">
+                    <div class="promo-news__title">Фронтальные погрузчики:</div>
+
+                    <ul>
+                        <li>
+                            запчасти для <a href="#">LG-918 PC10,CGB680</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">LG 930-1</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">LG-933</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">CHANGLIN, CHANGGONG</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">FOTON</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">TOTA, YOTONG</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">NEO, FUKAI</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">XCMG</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="promo-news">
+                    <div class="promo-news__title">Гидромеханические коробки передач:</div>
+
+                    <ul>
+                        <li>
+                            запчасти для <a href="#">LG-918 PC10,CGB680</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">LG 930-1</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">LG-933</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">CHANGLIN, CHANGGONG</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">FOTON</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="promo-news">
+                    <div class="promo-news__title">Шарниры сочленения:</div>
+
+                    <ul>
+                        <li>
+                            запчасти для <a href="#">LG-918 PC10,CGB680</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">LG 930-1</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">LG-933</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">CHANGLIN, CHANGGONG</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">FOTON</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">FOTON</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">FOTON</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">FOTON</a>
+                        </li>
+
+                        <li>
+                            запчасти для <a href="#">FOTON</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="promo-news">
+                    <div class="promo-news__title">Фильтры:</div>
+
+                    <ul>
+                        <li>
+                            <a href="#">SDLG</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="promo-news">
+                    <div class="promo-news__title">Масло, смазка и химия для фронтальных погрзчиков:</div>
+
+                    <ul>
+                        <li>
+                            <a href="#">Mobile</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Прочее</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="promo-news">
+                    <div class="promo-news__title">Инструмент для ТО:</div>
+
+                    <ul>
+                        <li>
+                            <a href="#">Гаечные ключи, головки, съемники</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-    
-            <div class="header__burger">
-                <span class="toggle-menu mobile-menu"><span></span></span>
-            </div>
-        </div>
-    </div>
 
-<div class="content content--main">
-    <div class="promo-main">
-        <div class="promo-main__img" style="background: url(img/promo-img1.jpg);"></div>
+            <div class="article-main__content">
+                <div class="article-main__item">
+                    <div class="article-main__item__content">
+                        <div class="head-h1">Запчасти для китайской спецтехники <span class="promo-lines">////</span></div>
 
-        <div class="content__container promo-main__content">
-            <div class="head-h1 promo-main__title">Экспресс-доставка свежих букетов</div>
-        </div>
-
-        <div class="promo-main__icons">
-            <div class="content__container">
-                <div class="promo-properties promo-properties--promo">
-                    <div class="promo-properties__block">
-                        <div class="promo-properties__img">
-                            <div class="promo-properties__img__wrapper">
-                                <svg class="promo-properties__icon promo-properties__icon--flowers">
-                                    <use xlink:href="icons/icons.svg#properties-flowers"></use>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <p class="promo-properties__text">Только свежие цветы</p>
-                    </div>
-
-                    <div class="promo-properties__block">
-                        <div class="promo-properties__img">
-                            <div class="promo-properties__img__wrapper">
-                                <svg class="promo-properties__icon promo-properties__icon--car" style="">
-                                    <use xlink:href="icons/icons.svg#properties-car"></use>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <p class="promo-properties__text">Самая быстрая доставка</p>
-                    </div>
-
-                    <div class="promo-properties__block">
-                        <div class="promo-properties__img">
-                            <div class="promo-properties__img__wrapper">
-                                <svg class="promo-properties__icon promo-properties__icon--award">
-                                    <use xlink:href="icons/icons.svg#properties-award"></use>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <p class="promo-properties__text">Контроль качества</p>
-                    </div>
-
-                    <div class="promo-properties__block hidden-sm hidden-md hidden-xs">
-                        <div class="promo-properties__img">
-                            <div class="promo-properties__img__wrapper">
-                                <svg class="promo-properties__icon promo-properties__icon--flowers">
-                                    <use xlink:href="icons/icons.svg#properties-flowers"></use>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <p class="promo-properties__text">Только свежие цветы</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="content__container">
-        <div class="promo-catalog__wrapper">
-            <div class="promo-catalog promo-catalog--main">
-                <div class="head-h2 promo-catalog__title">Самое популярное</div>
-
-                <div class="promo-catalog__block__wrapper">
-                    <div class="promo-catalog__block">
-                        <div class="promo-item">
-                            <div class="promo-item__img">
-                                <img src="img/promo-item1.jpg" alt="">
-                            </div>
-
-                            <div class="promo-item__description">
-                                <a href="#" class="promo-item__title">Розовая нежность</a>
-
-                                <div class="promo-item__price">2 990 <span class="rouble"></span></div>
-
-                                <a href="#" class="promo-item__delivery">
-                                    <div class="promo-item__delivery__text">Заказать</div>
-
-                                    <div class="promo-item__delivery__time">
-                                        <svg class="promo-item__delivery__icon">
-                                            <use xlink:href="icons/icons.svg#properties-car-mini"></use>
-                                        </svg>
-
-                                        <div class="promo-item__delivery__time__text">60 мин.</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="promo-catalog__block">
-                        <div class="promo-item">
-                            <div class="promo-item__img">
-                                <img src="img/promo-item1.jpg" alt="">
-                            </div>
-
-                            <div class="promo-item__description">
-                                <a href="#" class="promo-item__title">Розовая нежность</a>
-
-                                <div class="promo-item__price">2 990 <span class="rouble"></span></div>
-
-                                <a href="#" class="promo-item__delivery">
-                                    <div class="promo-item__delivery__text">Заказать</div>
-
-                                    <div class="promo-item__delivery__time">
-                                        <svg class="promo-item__delivery__icon">
-                                            <use xlink:href="icons/icons.svg#properties-car-mini"></use>
-                                        </svg>
-
-                                        <div class="promo-item__delivery__time__text">60 мин.</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="promo-catalog__block">
-                        <div class="promo-item">
-                            <div class="promo-item__img">
-                                <img src="img/promo-item1.jpg" alt="">
-                            </div>
-
-                            <div class="promo-item__description">
-                                <a href="#" class="promo-item__title">Розовая нежность</a>
-
-                                <div class="promo-item__price">2 990 <span class="rouble"></span></div>
-
-                                <a href="#" class="promo-item__delivery">
-                                    <div class="promo-item__delivery__text">Заказать</div>
-
-                                    <div class="promo-item__delivery__time">
-                                        <svg class="promo-item__delivery__icon">
-                                            <use xlink:href="icons/icons.svg#properties-car-mini"></use>
-                                        </svg>
-
-                                        <div class="promo-item__delivery__time__text">60 мин.</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="promo-catalog__block">
-                        <div class="promo-item">
-                            <div class="promo-item__img">
-                                <img src="img/promo-item1.jpg" alt="">
-                            </div>
-
-                            <div class="promo-item__description">
-                                <a href="#" class="promo-item__title">Розовая нежность</a>
-
-                                <div class="promo-item__price">2 990 <span class="rouble"></span></div>
-
-                                <a href="#" class="promo-item__delivery">
-                                    <div class="promo-item__delivery__text">Заказать</div>
-
-                                    <div class="promo-item__delivery__time">
-                                        <svg class="promo-item__delivery__icon">
-                                            <use xlink:href="icons/icons.svg#properties-car-mini"></use>
-                                        </svg>
-
-                                        <div class="promo-item__delivery__time__text">60 мин.</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
                     </div>
                 </div>
 
-                <div class="promo-catalog__more">
-                    <button class="btn btn__promo btn__loading">
-                        <span class="btn__loading__text">
-                            + еще 56 букетов
-
-                            <svg class="btn__loading__icon">
-                                <use xlink:href="icons/icons.svg#loading"></use>
-                            </svg>
-                        </span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="promo-catalog promo-catalog--main">
-                <div class="head-h2 promo-catalog__title">Монобукеты</div>
-
-                <div class="promo-catalog__block__wrapper">
-                    <div class="promo-catalog__block">
-                        <div class="promo-item">
-                            <div class="promo-item__img">
-                                <img src="img/promo-item1.jpg" alt="">
-                            </div>
-
-                            <div class="promo-item__description">
-                                <a href="#" class="promo-item__title">Розовая нежность</a>
-
-                                <div class="promo-item__price">2 990 <span class="rouble"></span></div>
-
-                                <a href="#" class="promo-item__delivery">
-                                    <div class="promo-item__delivery__text">Заказать</div>
-
-                                    <div class="promo-item__delivery__time">
-                                        <svg class="promo-item__delivery__icon">
-                                            <use xlink:href="icons/icons.svg#properties-car-mini"></use>
-                                        </svg>
-
-                                        <div class="promo-item__delivery__time__text">60 мин.</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="promo-catalog__block">
-                        <div class="promo-item">
-                            <div class="promo-item__img">
-                                <img src="img/promo-item1.jpg" alt="">
-                            </div>
-
-                            <div class="promo-item__description">
-                                <a href="#" class="promo-item__title">Розовая нежность</a>
-
-                                <div class="promo-item__price">2 990 <span class="rouble"></span></div>
-
-                                <a href="#" class="promo-item__delivery">
-                                    <div class="promo-item__delivery__text">Заказать</div>
-
-                                    <div class="promo-item__delivery__time">
-                                        <svg class="promo-item__delivery__icon">
-                                            <use xlink:href="icons/icons.svg#properties-car-mini"></use>
-                                        </svg>
-
-                                        <div class="promo-item__delivery__time__text">60 мин.</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="promo-catalog__block">
-                        <div class="promo-item">
-                            <div class="promo-item__img">
-                                <img src="img/promo-item1.jpg" alt="">
-                            </div>
-
-                            <div class="promo-item__description">
-                                <a href="#" class="promo-item__title">Розовая нежность</a>
-
-                                <div class="promo-item__price">2 990 <span class="rouble"></span></div>
-
-                                <a href="#" class="promo-item__delivery">
-                                    <div class="promo-item__delivery__text">Заказать</div>
-
-                                    <div class="promo-item__delivery__time">
-                                        <svg class="promo-item__delivery__icon">
-                                            <use xlink:href="icons/icons.svg#properties-car-mini"></use>
-                                        </svg>
-
-                                        <div class="promo-item__delivery__time__text">60 мин.</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="promo-catalog__block">
-                        <div class="promo-item">
-                            <div class="promo-item__img">
-                                <img src="img/promo-item1.jpg" alt="">
-                            </div>
-
-                            <div class="promo-item__description">
-                                <a href="#" class="promo-item__title">Розовая нежность</a>
-
-                                <div class="promo-item__price">2 990 <span class="rouble"></span></div>
-
-                                <a href="#" class="promo-item__delivery">
-                                    <div class="promo-item__delivery__text">Заказать</div>
-
-                                    <div class="promo-item__delivery__time">
-                                        <svg class="promo-item__delivery__icon">
-                                            <use xlink:href="icons/icons.svg#properties-car-mini"></use>
-                                        </svg>
-
-                                        <div class="promo-item__delivery__time__text">60 мин.</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="promo-catalog__more">
-                    <button class="btn btn__promo btn__loading">
-                        <span class="btn__loading__text">
-                            + еще 56 букетов
-
-                            <svg class="btn__loading__icon">
-                                <use xlink:href="icons/icons.svg#loading"></use>
-                            </svg>
-                        </span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="promo-catalog promo-catalog--main">
-                <div class="head-h2 promo-catalog__title">Букеты дня</div>
-
-                <div class="promo-catalog__block__wrapper">
-                    <div class="promo-catalog__block">
-                        <div class="promo-item">
-                            <div class="promo-item__img">
-                                <img src="img/promo-item1.jpg" alt="">
-                            </div>
-
-                            <div class="promo-item__description">
-                                <a href="#" class="promo-item__title">Розовая нежность</a>
-
-                                <div class="promo-item__price">2 990 <span class="rouble"></span></div>
-
-                                <a href="#" class="promo-item__delivery">
-                                    <div class="promo-item__delivery__text">Заказать</div>
-
-                                    <div class="promo-item__delivery__time">
-                                        <svg class="promo-item__delivery__icon">
-                                            <use xlink:href="icons/icons.svg#properties-car-mini"></use>
-                                        </svg>
-
-                                        <div class="promo-item__delivery__time__text">60 мин.</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="promo-catalog__block">
-                        <div class="promo-item">
-                            <div class="promo-item__img">
-                                <img src="img/promo-item1.jpg" alt="">
-                            </div>
-
-                            <div class="promo-item__description">
-                                <a href="#" class="promo-item__title">Розовая нежность</a>
-
-                                <div class="promo-item__price">2 990 <span class="rouble"></span></div>
-
-                                <a href="#" class="promo-item__delivery">
-                                    <div class="promo-item__delivery__text">Заказать</div>
-
-                                    <div class="promo-item__delivery__time">
-                                        <svg class="promo-item__delivery__icon">
-                                            <use xlink:href="icons/icons.svg#properties-car-mini"></use>
-                                        </svg>
-
-                                        <div class="promo-item__delivery__time__text">60 мин.</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="promo-catalog__block">
-                        <div class="promo-item">
-                            <div class="promo-item__img">
-                                <img src="img/promo-item1.jpg" alt="">
-                            </div>
-
-                            <div class="promo-item__description">
-                                <a href="#" class="promo-item__title">Розовая нежность</a>
-
-                                <div class="promo-item__price">2 990 <span class="rouble"></span></div>
-
-                                <a href="#" class="promo-item__delivery">
-                                    <div class="promo-item__delivery__text">Заказать</div>
-
-                                    <div class="promo-item__delivery__time">
-                                        <svg class="promo-item__delivery__icon">
-                                            <use xlink:href="icons/icons.svg#properties-car-mini"></use>
-                                        </svg>
-
-                                        <div class="promo-item__delivery__time__text">60 мин.</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="promo-catalog__block">
-                        <div class="promo-item">
-                            <div class="promo-item__img">
-                                <img src="img/promo-item1.jpg" alt="">
-                            </div>
-
-                            <div class="promo-item__description">
-                                <a href="#" class="promo-item__title">Розовая нежность</a>
-
-                                <div class="promo-item__price">2 990 <span class="rouble"></span></div>
-
-                                <a href="#" class="promo-item__delivery">
-                                    <div class="promo-item__delivery__text">Заказать</div>
-
-                                    <div class="promo-item__delivery__time">
-                                        <svg class="promo-item__delivery__icon">
-                                            <use xlink:href="icons/icons.svg#properties-car-mini"></use>
-                                        </svg>
-
-                                        <div class="promo-item__delivery__time__text">60 мин.</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="promo-catalog__more">
-                    <button class="btn btn__promo btn__loading">
-                        <span class="btn__loading__text">
-                            + еще 56 букетов
-
-                            <svg class="btn__loading__icon">
-                                <use xlink:href="icons/icons.svg#loading"></use>
-                            </svg>
-                        </span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="promo-review promo-review--main">
-            <div class="head-h2 promo-review__title">Отзывы</div>
-
-            <div class="slider slider-review slider-review--main">
-                <div>
-                    <div class="item-review">
-                        <div class="item-review__rating">
-                            <div class="star-ratings-css">
-                                <div class="star-ratings-css-top" style="width: 100%">
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                </div>
-
-                                <div class="star-ratings-css-bottom">
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                </div>
-                            </div>
+                <div class="article-main__item article-main__item--certificate">
+                    <div class="article-main__item__content">
+                        <div class="article-main__item__img">
+                            <a href="#"><img src="img/certificate.jpg" alt=""></a>
                         </div>
 
-                        <div class="item-review__description">
-                            <p>Приехали вовремя, позвонили заранее. Получила цветы в идеальном состоянии. Платила картой. Ко мне оба раза приезжали поздно - с 22 до 23. Это очень удобно, если приходишь домой поздно. Отличный сервис! Никаких замечаний!</p>
-                        </div>
-
-                        <div class="item-review__profile">
-                            <div class="item-review__profile__img">
-                                <img src="img/social-img1.png" alt="">
-                            </div>
-
-                            <div class="item-review__profile__name">
-                                <p>Елена Ларина
-                                    <a href="#" target="_blank">
-                                        <svg class="item-review__profile__social">
-                                            <use xlink:href="icons/icons.svg#fb"></use>
-                                        </svg>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden=true></span>
                                     </a>
-                                </p>
-                                <p>маркетолог</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="item-review">
-                        <div class="item-review__rating">
-                            <div class="star-ratings-css">
-                                <div class="star-ratings-css-top" style="width: 100%">
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                </div>
-
-                                <div class="star-ratings-css-bottom">
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                    <span class="star-ratings-css__star">★</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item-review__description">
-                            <p>Приехали вовремя, позвонили заранее. Получила цветы в идеальном состоянии. Платила картой. Ко мне оба раза приезжали поздно - с 22 до 23. Это очень удобно, если приходишь домой поздно. Отличный сервис! Никаких замечаний!</p>
-                        </div>
-
-                        <div class="item-review__profile">
-                            <div class="item-review__profile__img">
-                                <img src="img/social-img1.png" alt="">
-                            </div>
-
-                            <div class="item-review__profile__name">
-                                <p>Елена Ларина
-                                    <a href="#" target="_blank">
-                                        <svg class="item-review__profile__social">
-                                            <use xlink:href="icons/icons.svg#fb"></use>
-                                        </svg>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="active"><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden=true></span>
                                     </a>
-                                </p>
-                                <p>маркетолог</p>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="article-main__item__side">
+                        <div class="article-main__item__img article-main__item__img--mini">
+                            <img src="img/certificate.jpg" alt="">
+                        </div>
+
+                        <div class="article-main__item__img article-main__item__img--mini">
+                            <img src="img/certificate.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-main__item article-main__item--stock">
+                    <div class="article-main__item__content">
+                        <div class="head-h1">Акции <span class="promo-lines">////</span></div>
+
+                        <div class="promo-stock">
+                            <div class="promo-stock__img">
+                                <a href="#"><img src="img/stock-img1.jpg" alt=""></a>
+                            </div>
+
+                            <div class="promo-stock__description">
+                                <a href="#" class="promo-stock__title">С 10 мая 2017 года двигатель Weichai-Deutz - 350 000 руб. остаток 2 шт.</a>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="article-main__item__side">
+                        <a href="#" class="head-h3 color--dark article-main__item__side__link">ВСЕ АКЦИИ</a>
+
+                        <div class="promo-stock promo-stock--full">
+                            <div class="promo-stock__img">
+                                <a href="#"><img src="img/stock-img1.jpg" alt=""></a>
+                            </div>
+
+                            <div class="promo-stock__description">
+                                <a href="#" class="promo-stock__title">Фильтр топливной очистки с влагоотделителем CXYUI3094</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-main__item article-main__item--diplom">
+                    <div class="article-main__item__content">
+                        <div class="head-h1">Дипломы <span class="promo-lines">////</span></div>
+
+                        <div class="certificate-catalog__wrapper">
+                            <div class="certificate-catalog certificate-catalog--index">
+                                <div class="certificate-catalog__block">
+                                    <div class="certificate-catalog__img">
+                                        <img src="img/diplom-img1.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="certificate-catalog__block">
+                                    <div class="certificate-catalog__img">
+                                        <img src="img/diplom-img1.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="certificate-catalog__block">
+                                    <div class="certificate-catalog__img">
+                                        <img src="img/diplom-img1.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="certificate-catalog__block">
+                                    <div class="certificate-catalog__img">
+                                        <img src="img/diplom-img1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden=true></span>
+                                    </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="active"><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden=true></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="article-main__item__side">
+                        <a href="#" class="head-h1 color--dark">Новости <span class="promo-lines">////</span></a>
+
+                        <ul class="news-item">
+                            <li>
+                                <div class="news-item__date">21 марта 2018</div>
+
+                                <a href="#" class="news-item__title">Заголовок 1</a>
+
+                                <div class="news-item__description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+                                </div>
+
+                                <a href="#" class="news-item__more">Читать полностью</a>
+                            </li>
+
+                            <li>
+                                <div class="news-item__date">21 марта 2018</div>
+
+                                <a href="#" class="news-item__title">Заголовок 1</a>
+
+                                <div class="news-item__description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                </div>
+
+
+                                <a href="#" class="news-item__more">Читать полностью</a>
+                            </li>
+
+                            <li>
+                                <div class="news-item__date">21 марта 2018</div>
+
+                                <a href="#" class="news-item__title">Заголовок 1</a>
+
+                                <div class="news-item__description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+
+                                <a href="#" class="news-item__more">Читать полностью</a>
+                            </li>
+                        </ul>
+
+                        <a href="#" class="head-h3 color--dark text--underline article-main__item__side__link">ВСЕ НОВОСТИ</a>
+                    </div>
+                </div>
+
+                <div class="article-main__item">
+                    <div class="article-main__item__content">
+                        <div class="head-h1">Наши преимущества <span class="promo-lines">////</span></div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus
+                            et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+                    </div>
+                </div>
+
+                <div class="article-main__item">
+                    <div class="article-main__item__content">
+                        <div class="head-h1">О компании  <span class="promo-lines">////</span></div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus
+                            et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="promo-instagram__wrapper">
-        <div class="content__container">
-            <div class="head-h2 promo-instagram__title">Инстаграм @germetflowers</div>
-        </div>
-
-        <div class="promo-instagram__block__wrapper">
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img1.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img2.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img3.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img1.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img2.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img3.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img1.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img2.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img3.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img1.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img1.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img2.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img3.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img1.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img2.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img3.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img1.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img2.jpg" class="promo-instagram__img" alt="">
-            </div>
-            <div class="promo-instagram__block">
-                <img src="img/instagram-img3.jpg" class="promo-instagram__img" alt="">
-            </div>
-        </div>
-    </div>
-
-    <div class="promo-sub promo-sub--main">
-        <div class="content__container">
-            <div class="head-h2 promo-sub__title">Подписка на цветы</div>
-        </div>
-
-        <div class="promo-sub__slider">
-            <div class="promo-sub__slider__item">
-                <div class="promo-sub__img">
-                    <img src="img/sub-img1.png" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="content__container">
-            <div class="promo-sub__description">
-                <p>Подписка на цветы – это удобно. получайте свежие цветы каждую неделю от 8 000 руб в месяц</p>
-
-                <div class="promo-sub__description__btn">
-                    <a href="#" class="btn btn__promo">Узнать больше </a>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
         <div class="footer">
+            <!--<div class="footer__img__wrapper">-->
+                <div class="footer__img"></div>
+            <!--</div>-->
+
             <div class="footer__container">
-                <div class="promo-about">
-                    <div class="head-h2 promo-about__title">О нас пишут</div>
 
-                    <ul class="promo-about__nav">
-                        <li>
-                            <a href="#">
-                                <span class="icon icon__afisha"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="promo-about__nav__img" height="24px" width="228px">
-                                    <use xlink:href="icons/icons.svg#promo-about-commerc"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="icon icon__village"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="promo-message">
-                    <div class="head-h2 promo-message__title">Можно сделать заказ через любой мессенджер</div>
-
-                    <ul class="promo-message__nav">
-                        <li>
-                            <a href="#">
-                                <svg class="promo-message__icon promo-message__icon--telegram">
-                                    <use xlink:href="icons/icons.svg#social-telegram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="promo-message__icon promo-message__icon--wtsp">
-                                    <use xlink:href="icons/icons.svg#social-wtsp"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="promo-message__icon promo-message__icon--fb">
-                                    <use xlink:href="icons/icons.svg#social-fb"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer__main">
-                <div class="footer__container">
-                    <div class="footer__content">
-                        <ul class="footer__nav">
-                            <li><a href="#">Оплата</a></li>
-                            <li><a href="#">Политика конфиденциальности</a></li>
-                            <li><a href="#">Обработка персональных данных</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-
-                        <p>©2018 Germen. Использование материалов сайта возможно только при наличии активной ссылки на первоисточник.</p>
+                <div class="footer__content">
+                    <div class="footer__logo">
+                        <a href="#"><img src="img/logo.png" alt=""></a>
                     </div>
 
-                    <div class="footer__info">
-                        <ul class="footer__social">
-                            <li>
-                                <a href="#">
-                                    <svg width="41px" height="41px">
-                                        <use xlink:href="icons/icons.svg#fb-circle"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <svg width="41px" height="41px">
-                                        <use xlink:href="icons/icons.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                    <ul class="footer__tel ">
+                        <li>
+                            <a href="tel:88007753827">8 (800) 775-38-27</a>
+                        </li>
+                        <li>
+                            <a href="tel:88312610353">8 (831) 261-03-53</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__nav ">
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Каталог запчастей</a>
+                        </li>
+                        <li>
+                            <a href="#">Ремонт</a>
+                        </li>
+                        <li>
+                            <a href="#">Статьи</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#">Акции</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="footer__made ">
+                        <p>Сделано в <a href="#">Burbon.ru</a></p>
                     </div>
                 </div>
+
             </div>
         </div>
     </main>
-    <div class="modal fade" id="popup-product" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <div class="modal right fade" id="favourite-side1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal__close modal__close--main">
+            <button type="button" class="btn " data-dismiss="modal">
+                close
+            </button>
+        </div>
+    
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="popup-promo">
-                    <div class="popup-promo__header">
-                        <div class="logo"></div>
     
-                        <div class="popup-promo__close mobile-menu active" data-dismiss="modal" aria-hidden="true">
-                            <span></span>
-                        </div>
-                    </div>
+                
     
-                    <div class="popup-promo__slider">
-                        <div class="promo-product">
-                            <div class="promo-product__item">
-                                <div class="promo-product__img">
-                                    <img src="img/promo-item1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="promo-product__item">
-                                <div class="promo-product__img">
-                                    <img src="img/promo-item1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="promo-product__item">
-                                <div class="promo-product__img">
-                                    <img src="img/promo-item1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="promo-product__item">
-                                <div class="promo-product__img">
-                                    <img src="img/promo-item1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="promo-product__item">
-                                <div class="promo-product__img">
-                                    <img src="img/promo-item1.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="popup-promo__content">
-                        <div class="popup-promo__description">
-                            <div class="popup-promo__title">
-                                Розовая нежность <strong class="popup-promo__price">2 990 <span class="rouble"></span></strong>
-                            </div>
-    
-                            <div class="popup-promo__delivery">Самая быстрая доставка — 60 мин</div>
-                        </div>
-    
-                        <div class="popup-promo__btn">
-                            <a href="#" class="btn btn__main">Заказать</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-    
-    <div class="modal fade" id="popup-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog--mini">
-            <div class="modal-content">
-                <div class="popup-promo popup-promo--login">
-                    <div class="popup-promo__close mobile-menu active" data-dismiss="modal" aria-hidden="true">
-                            <span></span>
-                        </div>
-    
-                    <div class="popup-promo__content">
-                        <p class="popup-promo__text">Скажите куда вы доставить цветы, мы покажем ближайшее время доставки каждого букета</p>
-    
-                        <ul class="modal-login">
-                            <li>
-                                <a href="#" class="btn btn__main">Внутри садового</a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn__main">От садового до ТТК</a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn__main">От ТТК до МКАД</a>
-                            </li>
-                        </ul>
-    
-                        <p class="popup-promo__text popup-promo__text--mini">Доставка за МКАД :(</p>
-    
-                        <a href="#" class="btn btn__promo popup-promo__submit">Не хочу выбирать</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="modal fade" id="popup-flowers" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="popup-promo">
-                    <div class="popup-promo__header">
-                        <div class="logo"></div>
-                    </div>
-    
-                    <div class="popup-promo__close mobile-menu active" data-dismiss="modal" aria-hidden="true">
-                        <span></span>
-                    </div>
-    
-                    <div class="popup-promo__greate">
-                        <div class="popup-promo__greate__logo">
-                            <img src="img/logo2.png" alt="">
-                        </div>
-    
-                        <div class="popup-promo__greate__description">
-                            <div class="head-h2">Спасибо!</div>
-                            <p>Ваш заказ №233 передан в работу. Статус заказа вы получите СМС-сообщением</p>
-                        </div>
-    
-                        <div class="popup-promo__greate__social">
-                            <a href="#">
-                                <svg width="64px" height="64px" class="popup-promo__greate__social__icon">
-                                    <use xlink:href="icons/icons.svg#instagram"></use>
-                                </svg>
-                            </a>
-    
-                            <p>Подпишитесь на наш инстаграм, чтобы видеть самые свежие букеты в нашей коллекции</p>
-                        </div>
-    
-                        <div class="popup-promo__greate__img">
-                            <div class="popup-promo__greate__img__row">
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img1.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img2.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img3.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img1.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img2.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img3.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img1.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img2.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img3.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="popup-promo__greate__img__row">
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img1.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img2.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img3.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img1.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img2.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img3.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img1.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img2.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img3.jpg" alt="">
-                                </div>
-                                <div class="popup-promo__greate__img__block">
-                                    <img src="img/instagram-img1.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
