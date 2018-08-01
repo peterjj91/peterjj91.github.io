@@ -7549,7 +7549,10 @@ input {
   height: 506px;
   padding-top: 23px;
   position: relative;
-  background-image: url("../img/header-background.jpg"); }
+  background-image: url("../img/header-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
   .header:after {
     content: '';
     position: absolute;
