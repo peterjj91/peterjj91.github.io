@@ -8232,13 +8232,13 @@ input {
         font-size: 12px;
         margin-bottom: 10px; }
   .header.affix {
-    background-image: none;
-    transition: top .3s ease;
     position: fixed;
-    top: -65px;
+    transform: translateY(-65px);
     height: 65px;
+    background-image: none;
+    transition: top .2s ease;
     padding: 0;
-    top: 0;
+    top: 65px;
     left: 0;
     right: 0;
     z-index: 5;
@@ -9105,15 +9105,15 @@ input {
   height: 100vh;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 6;
   display: none; }
 
 .mm-menu {
   top: 0;
   position: fixed;
-  z-index: 2;
+  z-index: 6;
   background-color: #1b1b1bf2;
-  box-shadow: 1px 7px 12px #00000042;
+  box-shadow: none;
   left: -300px;
   width: 300px;
   height: 100vh; }

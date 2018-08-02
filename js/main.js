@@ -44985,63 +44985,11 @@ bodyOverlay.add(mClose).click(function() {
 });
 //
 
-// swiper slider
-// big
-var bigGalleryTop = new Swiper('.swiper-big .gallery-top', {
-    spaceBetween: 0,
-    direction: 'vertical',
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    loop: true,
-    loopedSlides: 4
-});
-var bigGalleryThumbs = new Swiper('.swiper-big .gallery-thumbs', {
-    direction: 'vertical',
-    spaceBetween: 10,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    touchRatio: 0.2,
-    slideToClickedSlide: true,
-    loop: true,
-    loopedSlides: 4
-});
-bigGalleryTop.controller.control = bigGalleryThumbs;
-bigGalleryThumbs.controller.control = bigGalleryTop;
-
-// mini
-var miniGalleryTop = new Swiper('.swiper-mini .gallery-top', {
-    spaceBetween: 0,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    loop: true,
-    loopedSlides: 4
-});
-var miniGalleryThumbs = new Swiper('.swiper-mini .gallery-thumbs', {
-    spaceBetween: 10,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    touchRatio: 0.2,
-    slideToClickedSlide: true,
-    loop: true,
-    loopedSlides: 4
-});
-miniGalleryTop.controller.control = miniGalleryThumbs;
-miniGalleryThumbs.controller.control = miniGalleryTop;
-//
-
 $(document).ready(function(){
     $(".header").affix({
         offset: {
-            top: $(".header").outerHeight(true)
+            top: ($('.header').outerHeight(true)) + 40
         }
-    }).on('affix.bs.affix', function () {
-        $('body').addClass("body-fix");
-    }).on('affix-top.bs.affix', function () {
-        $('body').removeClass("body-fix");
     });
 });
 
@@ -45075,3 +45023,5 @@ $(document).ready(function () {
     //     postfix: " руб",
     // });
 });
+
+jQuery(document).ready(function(){var accordionsMenu=$('.cd-accordion-menu');if(accordionsMenu.length>0){accordionsMenu.each(function(){var accordion=$(this);accordion.on('change','input[type="checkbox"]',function(){var checkbox=$(this);console.log(checkbox.prop('checked'));(checkbox.prop('checked'))?checkbox.siblings('ul').attr('style','display:none;').slideDown(300):checkbox.siblings('ul').attr('style','display:block;').slideUp(300);});});}});
