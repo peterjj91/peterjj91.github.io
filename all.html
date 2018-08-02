@@ -8,13 +8,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-<main id="panel-body">
-    <div class="header">
+<body >
+<main id="main" class="page-wrap">
+    <div class="overlay"></div>
+
+    <!-- Menu -->
+    <div class="mm-menu">
+        <div class="mm-menu-title">
+            <strong>MENU</strong>
+            <a href="#" class="close-mm-menu">
+                <i class="fa fa-times fa-lg"></i>
+            </a>
+        </div>
+        <div class="mm-menu-content">
+            <ul>
+                <li><a href="#">HOME PAGE</a></li>
+                <li><a href="#">BLOG ITEMS</a></li>
+                <li><a href="#">VIDEOS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <form id="mSearch" action="" method="post">
+                <input type="text" placeholder="Search in site..." class="m-search">
+            </form>
+        </div>
+    </div>
+    <!-- Menu -->
+
+    <div class="header" data-spy="affix">
         <div class="header__container">
             <div class="header__top">
                 <div class="header__logo">
-                    <a href="#" class="header__logo__img"><img src="img/logo.png" alt=""></a>
+                    <span class="header__logo__img mm-toggle"><img src="img/logo.png" alt=""></span>
 
                     <div class="header__logo__text">Запчасти, ремонт и обслуживание китайской спецтехники</div>
                 </div>
@@ -34,7 +58,9 @@
                             <span class="basket-mini__icon">
                                 <span class="icon icon__basket"></span>
                             </span>
+
                             <input type="text" class="basket-mini__input" placeholder="" value="2500">
+
                             <span class="basket-mini__currency">
                                 <span class="rouble"></span>
                             </span>
@@ -65,7 +91,7 @@
                     </button>
                 </div>
             </div>
-            
+
             <ul class="header__catalog">
                 <li>
                     <div class="header__catalog__icon">
@@ -197,7 +223,7 @@
                             <a href="#">Акции</a>
                         </li>
                     </ul>
-                    
+
                     <div class="footer__made ">
                         <p>Сделано в <a href="#">Burbon.ru</a></p>
                     </div>
