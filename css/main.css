@@ -7915,11 +7915,13 @@ input {
     width: 100%;
     height: 30px;
     background: url(../img/stripe.png);
+    background-repeat: no-repeat;
     background-repeat-x: repeat;
     background-position: center; }
     @media (max-width: 1050px) {
       .header:after {
-        height: 10px; } }
+        height: 10px;
+        background-size: contain; } }
   .header:before {
     content: '';
     position: absolute;
