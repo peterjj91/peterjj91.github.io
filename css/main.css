@@ -7442,6 +7442,7 @@ html, body {
 
 .head-h1 {
   font-family: "Cuprum", sans-serif;
+  font-weight: bold;
   letter-spacing: 0.6px;
   font-size: 26px;
   margin-bottom: 20px; }
@@ -7463,6 +7464,7 @@ html, body {
 .head-h3 {
   font-family: "Cuprum", sans-serif;
   font-size: 19px;
+  font-weight: bold;
   line-height: normal;
   margin-bottom: 20px; }
 
@@ -8185,13 +8187,14 @@ input {
           .header__catalog__description__text {
             padding-top: 0; } }
     .header__catalog__text {
+      font-family: "Cuprum", sans-serif;
       color: white;
       line-height: normal;
-      font-size: 12px; }
+      font-size: 13px; }
       @media (max-width: 1140px) {
         .header__catalog__text {
           line-height: normal;
-          font-size: 12px; } }
+          font-size: 13px; } }
       @media (max-width: 1050px) {
         .header__catalog__text {
           display: none; } }
@@ -9210,6 +9213,8 @@ input {
       margin-right: 6px; }
       .catalog__nav__view li:last-child {
         margin-right: 0; }
+      .catalog__nav__view li.active a {
+        color: #ff621e; }
     .catalog__nav__view a {
       top: auto;
       font-size: 20px;
