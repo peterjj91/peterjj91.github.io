@@ -7875,7 +7875,8 @@ input {
 .promo-nav {
   padding: 0;
   list-style: none;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 600; }
   .promo-nav li {
     width: 100%;
     padding: 0px 30px 0px 50px;
@@ -8602,7 +8603,8 @@ input {
   .promo-news__title {
     font-size: 16px;
     color: #ff5400;
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+    font-weight: 600; }
   .promo-news ul {
     padding: 0;
     list-style: none;
@@ -10199,8 +10201,6 @@ input {
   .promo-item .slick-arrow {
     font-size: 17px; }
   .promo-item .promo-catalog__item {
-    background-color: #fcfcfc;
-    box-shadow: 0px 0px 16px 0px rgba(98, 98, 98, 0.25);
     padding-bottom: 35px; }
   .promo-item .promo-catalog__img {
     background-color: #fff;
