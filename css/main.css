@@ -8217,7 +8217,7 @@ input {
           .header__catalog__text--active + .header__catalog__text--description {
             margin-top: 0; } }
       .header__catalog__text--description {
-        margin-top: 27px; }
+        margin-top: 10px; }
   .header.affix {
     position: fixed;
     transform: translateY(-65px);
