@@ -23,7 +23,7 @@
 
               <div class="header__logo">
                   <a href="#">
-                      <img src="img/logo.svg" alt="">
+                      <img src="img/logo.svg" class="logo" alt="">
                   </a>
               </div>
           </div>
@@ -693,8 +693,8 @@
         </div>
     </main>
     
-    <div class="modal right fade" id="favourite-side1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal__close modal__close--main">
+    <div class="modal modal--side right fade" id="favourite-side1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal__close">
             <button type="button" class="btn " data-dismiss="modal">
                 <svg>
                     <use xlink:href="icons/icons.svg#icon-close-big"></use>
@@ -896,8 +896,8 @@
         </div>
     </div>
     
-    <div class="modal right fade" id="favourite-side2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal__close modal__close--main">
+    <div class="modal modal--side right fade" id="favourite-side2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal__close">
             <button type="button" class="btn " data-dismiss="modal">
                 <svg>
                     <use xlink:href="icons/icons.svg#icon-close-big"></use>
@@ -938,8 +938,8 @@
         </div>
     </div>
     
-    <div class="modal right fade" id="favourite-side3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal__close modal__close--main">
+    <div class="modal modal--side right fade" id="favourite-side3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal__close">
             <button type="button" class="btn " data-dismiss="modal">
                 <svg>
                     <use xlink:href="icons/icons.svg#icon-close-big"></use>
@@ -1022,11 +1022,11 @@
         </div>
     </div>
     
-    <div class="modal right fade" id="favourite-side4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal__close modal__close--main">
+    <div class="modal modal--side right fade" id="favourite-side4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal__close">
             <button type="button" class="btn " data-dismiss="modal">
                 <svg>
-                    <use xlink:href="icons/icons.svg#icon-close-big"></use>
+                    <use xlink:href="icons/icons.svg#icon-close"></use>
                 </svg>
             </button>
         </div>
@@ -1044,103 +1044,180 @@
                     </div>
     
                     <div class="favourite-side__content">
-                        <div class="favourite-side__block">
-                            <div class="promo-tab promo-tab--modal">
-                                <ul class="nav nav-tabs promo-tab__nav" role="tablist">
-                                    <li role="presentation" class="">
-                                        <a href="#profile-registration" class="promo-tab__nav__link" aria-controls="profile-registration" role="tab" data-toggle="tab">
-                                            <span>Регистрация</span>
-                                        </a>
-                                    </li>
-                                    <li role="presentation" class="active">
-                                        <a href="#profile-login" class="promo-tab__nav__link" aria-controls="profile-login" role="tab" data-toggle="tab">
-                                            <span>Вход</span>
-                                        </a>
-                                    </li>
-                                </ul>
+                        <div class="promo-tab promo-tab--modal">
+                            <ul class="nav nav-tabs promo-tab__nav" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#profile-registration" class="promo-tab__nav__link" aria-controls="profile-registration" role="tab" data-toggle="tab">
+                                        <span class="promo-tab__nav__link__cell">
+                                            <span class="promo-tab__nav__link__text">Регистрация</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li role="presentation" class="">
+                                    <a href="#profile-login" class="promo-tab__nav__link" aria-controls="profile-login" role="tab" data-toggle="tab">
+                                        <span class="promo-tab__nav__link__cell">
+                                            <span class="promo-tab__nav__link__text">Вход</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
     
-                                <div class="tab-content promo-tab__content">
-                                    <div role="tabpanel" class="tab-pane " id="profile-registration">
-                                        <div class="user-registration">
-                                            <div class="head-h2 color--main">Мы хотим вас поддержать!</div>
+                            <div class="tab-content promo-tab__content">
+                                <div role="tabpanel" class="tab-pane active" id="profile-registration">
+                                    <div class="user-registration">
+                                        <div class="head-h2 color--main">Пройдите регистрацию</div>
     
-                                            <p>Чтобы не пропустить новые мотивирующие обучающие видео от наших экспертов, а также полезные статьи, мы попросим вас зарегистрироваться. </p>
+                                        <p>Для получения доступа к вебинарам вам необходимо зарегистрироваться.</p>
     
+                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <p><a href="#" class="">Уже регистрировались? </a></p>
                                             </div>
+                                        </div>
     
-                                            <div class="promo-login promo-login--modal">
+                                        <div class="promo-login promo-login--modal">
+                                            <div class="favourite-side__block__row">
                                                 <div class="favourite-side__block">
-                                                    <input type="text" class="input" placeholder="Ваше имя">
-                                                </div>
+                                                    <div class="input__wrapper">
+                                                        <input type="text" class="input" placeholder="Ваше имя">
     
-                                                <div class="favourite-side__block">
-                                                    <input type="email" class="input" placeholder="Электронная почта">
-                                                </div>
-    
-                                                <div class="favourite-side__block">
-                                                    <input type="text" class="input" placeholder="Пароль">
+                                                        <svg class="input__clear">
+                                                            <use xlink:href="icons/icons.svg#icon-close-x"></use>
+                                                        </svg>
+                                                    </div>
                                                 </div>
                                             </div>
     
+                                            <div class="favourite-side__block__row">
+                                                <div class="favourite-side__block">
+                                                    <select name="" id="" title="Специализация">
+                                                        <option value="">Педиатрия</option>
+                                                        <option value="">Оториноларингология</option>
+                                                        <option value="">Аллергология</option>
+                                                        <option value="">Дерматология</option>
+                                                        <option value="">Другое (указать)</option>
+                                                    </select>
+    
+                                                    <!--<div class="input__wrapper">-->
+                                                        <!--<input type="text" class="input" placeholder="Специализация">-->
+    
+                                                        <!--<svg class="input__clear">-->
+                                                            <!--<use xlink:href="icons/icons.svg#icon-close-x"></use>-->
+                                                        <!--</svg>-->
+                                                    <!--</div>-->
+                                                </div>
+                                            </div>
+    
+                                            <div class="favourite-side__block__row">
+                                                <div class="favourite-side__block">
+                                                    <div class="input__wrapper">
+                                                        <input type="text" class="input" placeholder="Электронная почта">
+    
+                                                        <svg class="input__clear">
+                                                            <use xlink:href="icons/icons.svg#icon-close-x"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="favourite-side__block__row">
+                                                <div class="favourite-side__block">
+                                                    <div class="input__wrapper">
+                                                        <input type="password" class="input" placeholder="Пароль">
+    
+                                                        <svg class="input__clear">
+                                                            <use xlink:href="icons/icons.svg#icon-close-x"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="favourite-side__block">
+                                                    <div class="input__wrapper">
+                                                        <input type="password" class="input" placeholder="Повторите пароль">
+    
+                                                        <svg class="input__clear">
+                                                            <use xlink:href="icons/icons.svg#icon-close-x"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <div class="promo-label__group promo-label__group--login">
                                                     <label class="promo-label">
                                                         <input type="checkbox" checked>
     
-                                                        <span>Я согласен с <a href="#">Условиями использования персональных</a> данных и <a href="#">Политикой Конфиденциальности</a></span>
-                                                    </label>
-    
-                                                    <label class="promo-label">
-                                                        <input type="checkbox" checked>
-    
-                                                        <span>Я согласен получать от ООО «Джонсон &amp; Джонсон» новостную рассылку и информацию о действующих акциях </span>
+                                                        <span>Я даю <a href="#">согласие</a> на обработку персональных данных в соответствии с Политикой конфиденциальности</span>
                                                     </label>
                                                 </div>
                                             </div>
-    
-                                            <button class="btn btn__promo">Зарегистрироваться</button>
                                         </div>
     
-                                        <div class="user-thank">
-                                            <div class="favourite-side__title color--main">Спасибо!</div>
+                                        <button class="btn btn__promo">Зарегистрироваться</button>
+                                    </div>
     
-                                            <p>Мы вам отправили приветственное письмо с просьбой завершить регистрацию. Не забудьте сделать это в ближайшее время: скорее всего, письмо уже в вашем почтовом ящике.</p>
+                                    <div class="user-thank">
+                                        <div class="favourite-side__title color--main">Спасибо!</div>
     
-                                            <br>
+                                        <p>Мы вам отправили приветственное письмо с просьбой завершить регистрацию. Не забудьте сделать это в ближайшее время: скорее всего, письмо уже в вашем почтовом ящике.</p>
     
+                                        <br>
+    
+                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <button class="btn btn__promo" type="button" data-dismiss="modal">Закрыть</button>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
     
-                                    <div role="tabpanel" class="tab-pane active" id="profile-login">
-                                        <div class="user-login" id="user-login">
-                                            <div class="head-h2 color--main">Пожалуйста, войдите!</div>
+                                <div role="tabpanel" class="tab-pane " id="profile-login">
+                                    <div class="user-login" id="user-login">
+                                        <div class="head-h2 color--main">Пожалуйста, войдите!</div>
     
-                                            <p>Авторизуйтесь, и вы сможете, например, задать вопрос нашим экспертам задолго до вебинара.</p>
+                                        <p>Авторизуйтесь, и вы сможете, например, задать вопрос нашим экспертам задолго до вебинара.</p>
     
+                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <p><a href="#">Еще нет регистрации?</a></p>
                                             </div>
+                                        </div>
     
-                                            <div class="promo-login promo-login--modal">
+                                        <div class="promo-login promo-login--modal">
+                                            <div class="favourite-side__block__row">
                                                 <div class="favourite-side__block has-error">
                                                     <label class="control-label">Направильная почта</label>
     
-                                                    <input type="email" class="input form-control" placeholder="Электронная почта">
-                                                </div>
+                                                    <div class="input__wrapper">
+                                                        <input type="email" class="input form-control" placeholder="Электронная почта">
     
-                                                <div class="favourite-side__block">
-                                                    <input type="password" class="input" placeholder="Пароль">
-                                                </div>
-                                                <div class="">
-                                                    <a href="#" id="forget-password">Забыли пароль?</a>
+                                                        <svg class="input__clear">
+                                                            <use xlink:href="icons/icons.svg#icon-close-x"></use>
+                                                        </svg>
+                                                    </div>
                                                 </div>
                                             </div>
     
+                                            <div class="favourite-side__block__row">
+                                                <div class="favourite-side__block">
+                                                    <div class="input__wrapper">
+                                                        <input type="password" class="input" placeholder="Пароль">
+    
+                                                        <svg class="input__clear">
+                                                            <use xlink:href="icons/icons.svg#icon-close-x"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="">
+                                                <a href="#" id="forget-password">Забыли пароль?</a>
+                                            </div>
+                                        </div>
+    
+                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <div class="promo-label__group promo-label__group--login">
                                                     <label class="promo-label">
@@ -1150,37 +1227,51 @@
                                                     </label>
                                                 </div>
                                             </div>
+                                        </div>
     
+                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <button class="btn btn__promo">Войти</button>
                                             </div>
                                         </div>
+                                    </div>
     
-                                        <div class="recover-step1" id="recover-step1">
-                                            <div class="head-h2 color--main">Восстановление пароля</div>
+                                    <div class="recover-step1" id="recover-step1">
+                                        <div class="head-h2 color--main">Восстановление пароля</div>
     
-                                            <p>Укажите почту, на которую будет отправлена ссылка для восстановления пароля.</p>
+                                        <p>Укажите почту, на которую будет отправлена ссылка для восстановления пароля.</p>
     
-                                            <br>
+                                        <br>
     
-                                            <div class="promo-login">
+                                        <div class="promo-login">
+                                            <div class="favourite-side__block__row">
                                                 <div class="favourite-side__block">
-                                                    <input type="email" class="input" placeholder="Электронная почта">
+                                                    <div class="input__wrapper">
+                                                        <input type="email" class="input" placeholder="Электронная почта">
+    
+                                                        <svg class="input__clear">
+                                                            <use xlink:href="icons/icons.svg#icon-close-x"></use>
+                                                        </svg>
+                                                    </div>
                                                 </div>
                                             </div>
+                                        </div>
     
+                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <button class="btn btn__promo" id="user-login-next">Хорошо</button>
                                             </div>
                                         </div>
+                                    </div>
     
-                                        <div class="recover-step2" id="recover-step2">
-                                            <div class="head-h2 color--main">Восстановление пароля</div>
+                                    <div class="recover-step2" id="recover-step2">
+                                        <div class="head-h2 color--main">Восстановление пароля</div>
     
-                                            <p>Мы вам отправили письмо с ссылкой для восстановления пароля. Перейдите по ссылке и укажите новый пароль для вашего аккаунта.</p>
+                                        <p>Мы вам отправили письмо с ссылкой для восстановления пароля. Перейдите по ссылке и укажите новый пароль для вашего аккаунта.</p>
     
-                                            <br>
+                                        <br>
     
+                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <button class="btn btn__promo">Хорошо</button>
                                             </div>
@@ -1191,6 +1282,40 @@
                         </div>
                     </div>
                 </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal modal--simple fade" id="modal-intro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="head-h4 modal__title">Обратите внимание!</div>
+    
+                <p>Данный сайт содержит профессиональную специализированную информацию. Согласно действующему законодательству, данные материалы могут быть доступны только для работников здравоохранения. </p>
+    
+                <p>Я подтверждаю, что являюсь специалистом с медицинским или фармацевтическим образованием и информация, полученная на сайте, будет использована мной только в профессиональной деятельности.</p>
+    
+                <div class="modal__button">
+                    <button class="btn btn__promo">Я подтверждаю</button>
+    
+                    <button class="btn btn__promo btn__promo--simple">Не подтверждаю</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal modal--simple fade" id="modal-access" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="head-h4 modal__title">Доступ к сайту закрыт</div>
+    
+                <p>Вы подтвердили, что не являетесь специалистом с медицинским или фармацевтическим образованием, поэтому не можете получить доступ к сайту.</p>
+    
+                <p>Данный сайт содержит профессиональную специализированную информацию. Согласно действующему законодательству, данные материалы могут бы��ь доступны только для работников здравоохранения. </p>
     
             </div>
         </div>

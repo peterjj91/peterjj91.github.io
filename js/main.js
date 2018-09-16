@@ -32295,6 +32295,38 @@ $(document).ready(function() {
     });
 });
 
+$('.mobile-menu').click(function(){
+    $(this).toggleClass("active");
+});
+
+if(window.matchMedia('(max-width: 1040px)').matches) {
+    $(document).ready(function() {
+        $('.calendar-catalog__events').slick({
+            slidesToShow: 1,
+            variableWidth: true,
+            dots: true,
+            arrows: false,
+            swipeToSlide: true,
+            draggable: true,
+            infinite: false,
+            responsive: [
+                {
+                    breakpoint: 1040,
+                    settings: {
+
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+
+                    }
+                }
+            ]
+        });
+    });
+}
+
 $(document).ready(function(){
     $('#forget-password').click(function(){
         $("#user-login").addClass('hidden');
@@ -32424,3 +32456,15 @@ $(document).ready(function() {
     $('.max-text').clampify({maxLines: 2, autoUpdate: true});
 });
 
+(function() {
+    $(".input__wrapper").on("focus", ".input:not(.focus)", function(e) {
+        e.stopPropagation();
+        $(this).addClass("focus");
+        return $(e.delegateTarget).addClass("focus");
+    }).on("click", ".input__clear", function(e) {
+        e.stopPropagation();
+        console.log(e, $(this).siblings('.input'));
+        return $(this).siblings('.input').val("").focus();
+    });
+
+}).call(this);
