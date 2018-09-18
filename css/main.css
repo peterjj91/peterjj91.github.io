@@ -6505,7 +6505,7 @@ button {
   .btn__promo {
     background-color: #fdba31;
     color: #00467f;
-    padding: 13px 50px 11px 50px;
+    padding: 13px 20px 11px 20px;
     font-size: 15px;
     font-family: MuseoSansCyrl-700;
     font-weight: bold;
@@ -6519,8 +6519,9 @@ button {
       .btn__promo {
         padding: 14px 15px 11px 15px; } }
     .btn__promo:hover, .btn__promo:focus {
-      opacity: 0.7;
-      color: #00467f;
+      opacity: 1;
+      background: #00467f;
+      color: white;
       text-decoration: none; }
     .btn__promo--clear {
       background-color: #ffffff;
@@ -6899,8 +6900,8 @@ input {
       transition: none; }
       .nav li a:hover, .nav li a:focus {
         opacity: 1;
-        color: white;
-        background-color: transparent;
+        background-color: #e0e9f0;
+        color: #00467f;
         text-decoration: none; }
       .nav li a:hover .content-link {
         border-bottom: 2px solid;
@@ -8469,11 +8470,11 @@ input {
 .promo-article__time {
   position: absolute;
   bottom: 4px;
-  right: 9px;
+  right: 8px;
   background: black;
   height: 31px;
-  font-size: 18px;
-  padding: 6px 5px 6px 8px;
+  font-size: 17px;
+  padding: 4px 6px 0px 8px;
   color: white;
   z-index: 1; }
   @media (max-width: 1040px) {
@@ -10235,7 +10236,8 @@ input {
   min-height: auto;
   border: none;
   margin: 0;
-  z-index: 2; }
+  z-index: 2;
+  background-color: #00467f; }
   @media (max-width: 1040px) {
     .promo-mobile {
       display: block; } }
@@ -10243,8 +10245,10 @@ input {
     padding: 0;
     border: none;
     width: 100%;
-    z-index: 1;
-    background-color: #00467f; }
+    z-index: 1; }
+    @media (max-width: 1040px) {
+      .promo-mobile .navbar-collapse {
+        background-color: #00467f; } }
   @media (max-width: 1040px) {
     .promo-mobile .header__container {
       padding: 0; } }
@@ -10386,6 +10390,7 @@ input {
     @media (max-width: 767px) {
       .modal--side .modal-dialog {
         width: 260px;
+        width: 85%;
         margin: 0; } }
   .modal--side .modal-content {
     border: none;
@@ -10405,9 +10410,10 @@ input {
   @media (max-width: 1040px) {
     .modal--side.fade.in .modal__close {
       right: 310px; } }
-  @media (max-width: 767px) {
-    .modal--side.fade.in .modal__close {
-      right: 275px; } }
+
+@media (max-width: 767px) and (max-width: 767px) {
+  .modal--side.fade.in .modal__close {
+    right: 88%; } }
 
 @media (max-width: 1040px) {
   .favourite-side {
