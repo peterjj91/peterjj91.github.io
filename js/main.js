@@ -34485,6 +34485,7 @@ $(document).ready(function() {
         language: 'ru',
         autoclose: true,
         disableTouchKeyboard: true,
+        todayHighlight: true,
         // format: 'MM',
         // minViewMode: 'days',
         // maxViewMode: 'days',
