@@ -22,8 +22,14 @@
               </div>
 
               <div class="header__logo">
-                  <a href="#">
-                      <img src="img/logo.svg" class="logo" alt="">
+                  <a href="#" class="logo"></a>
+              </div>
+
+              <div class="header__side">
+                  <a href="#" class="header__cab">
+                      <div class="header__cab__img" style="background: url(../img/rda@2x.png)"></div>
+
+                      <span class="header__cab__text">На главную страницу  РДА</span>
                   </a>
               </div>
           </div>
@@ -34,27 +40,43 @@
               <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
                   <div class="header__nav">
                       <ul class="nav nav--header">
-                          <li><a href="#"><span class="content-link">Главная</span></a></li>
-                          <li><a href="article-catalog.html"><span class="content-link">Календарь вебинаров</span></a></li>
-                          <li class="">
-                              <a href="#">
-                                  <span class="content-link">Запись вебинаров</span>
-                              </a>
-                          </li>
-                      </ul>
-
-                      <ul class="nav nav--header">
-                          <li class="interest">
+                          <li><a href="index.html"><span class="content-link">Главная</span></a></li>
+                          <li class="current"><a href="article-catalog.html"><span class="content-link">Школа диабета</span></a></li>
+                          <li><a href="#"><span class="content-link">Видео</span></a></li>
+                          <li><a href="#"><span class="content-link">Статьи</span></a></li>
+                          <li class="active">
                               <a href="#">
                                   <span class="content-link">Регистрация</span>
                               </a>
                           </li>
-                          <li class="interest">
+                          <li class="active nav__circle">
                               <a href="#">
-                                  <span class="content-link">Вход</span>
+                                  <span class="content-link">Войти</span>
                               </a>
                           </li>
                       </ul>
+                  </div>
+
+                  <div id="sb-search" class="sb-search">
+                      <form>
+                          <div class="sb-search__nav">
+                              <span class="mobile-menu mobile-menu--white"><span></span></span>
+                          </div>
+
+                          <div class="sb-search-input__wrapper">
+                              <input class="sb-search-input " onkeyup="buttonUp();" placeholder="Поиск" onblur="monkey();" type="search" name="search" id="search">
+
+                              <input class="sb-search-submit" type="submit"  value="">
+
+                              <div class="sb-icon-search">
+                                  <svg class="">
+                                      <use xlink:href="icons/icons.svg#icon-search"></use>
+                                  </svg>
+                              </div>
+                          </div>
+
+                          <button class="btn btn__promo sb-search__btn">Найти</button>
+                      </form>
                   </div>
               </div>
           </div>
@@ -87,12 +109,12 @@
             <div class="promo-cabinet__tab">
                 <div class="promo-tab">
                     <ul class="nav nav-tabs promo-tab__nav" role="tablist">
-                        <li role="presentation" class="">
+                        <li role="presentation" class="active">
                             <a href="#cabinet-info" aria-controls="profile-registration" role="tab" data-toggle="tab" class="promo-tab__nav__link">
                                 <span>Личная информация</span>
                             </a>
                         </li>
-                        <li role="presentation" class="active">
+                        <li role="presentation" class="">
                             <a href="#cabinet-history" aria-controls="profile-login" role="tab" data-toggle="tab" class="promo-tab__nav__link">
                                 <span>История обучения</span>
                             </a>
@@ -105,9 +127,9 @@
                     </ul>
 
                     <div class="tab-content promo-tab__content">
-                        <div role="tabpanel" class="tab-pane " id="cabinet-info">
+                        <div role="tabpanel" class="tab-pane active" id="cabinet-info">
                             <div class="promo-cabinet__history">
-                                <div class="head-h4 color--light promo-cabinet__history__title">Что мы о вас знаем</div>
+                                <div class="head-h5 color--light promo-cabinet__history__title">Что мы о вас знаем</div>
 
                                 <div class="promo-cabinet__block">
                                     <div class="promo-login promo-login--cabinet">
@@ -120,7 +142,7 @@
                                         </div>
 
                                         <div class="favourite-side__block">
-                                            <input type="text" class="input" placeholder="Дата рождения">
+                                            <input type="text" class="input calendar-item" placeholder="Дата рождения">
                                         </div>
 
                                         <div class="favourite-side__block">
@@ -274,14 +296,14 @@
                             </div>
                         </div>
 
-                        <div role="tabpanel" class="tab-pane active" id="cabinet-history">
+                        <div role="tabpanel" class="tab-pane " id="cabinet-history">
                             <div class="promo-progress">
                                 <div class="promo-progress__main">
                                     <div class="promo-progress__main__description">
                                         <div class="head-h3 color--main">Общий прогресс</div>
 
                                         <div class="hidden-sm hidden-xs">
-                                            <p>Здесь будем объяснять принцип формирования статистики обучения, а также цель ведения этой статистики, рассказываться о темах, и о том, что произойдет, когда добавиться новый материал. </p>
+                                            <p>В этом разделе можно узнать, сколько материалов по разным темам вы уже изучили, а что еще предстоит узнать.</p>
                                         </div>
                                     </div>
 
@@ -294,7 +316,7 @@
                                                     60%
                                                 </text>
                                                 <text x="60" y="20" dx="0" dy="5.3em" class="chart-gauge__label chart-gauge__label--mini">
-                                                    видео
+                                                    уроки, видео
                                                 </text>
                                                 <text x="60" y="20" dx="0" dy="6.4em" class="chart-gauge__label chart-gauge__label--mini">
                                                     и статьи
@@ -311,21 +333,23 @@
                                 <div class="promo-progress__content">
                                     <div class="promo-progress__box__wrapper">
                                         <div class="promo-progress__box">
-                                            <div class="promo-progress__box__img">
-                                                <span class="chart-gauge__wrapper chart-gauge__wrapper--radius">
-                                                    <svg viewBox="0 0 120 120" class="chart-gauge chart-gauge--middle" fill="none" stroke-width="2">
-                                                        <circle class="chart-gauge__base" r="57.32" cx="60" cy="60"></circle>
-                                                        <circle class="chart-gauge__primary" transform="rotate(-90 60 60)" stroke-dasharray="180 360" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
-                                                    </svg>
-                                                    <span class="chart-gauge__background">
-                                                        <span class="chart-gauge__background__img" style="background-image: url('img/articles-img.png');"></span>
+                                            <div class="promo-progress__box__top">
+                                                <div class="promo-progress__box__img">
+                                                    <span class="chart-gauge__wrapper chart-gauge__wrapper--radius">
+                                                        <svg viewBox="0 0 120 120" class="chart-gauge chart-gauge--middle" fill="none" stroke-width="2">
+                                                            <circle class="chart-gauge__base" r="57.32" cx="60" cy="60"></circle>
+                                                            <circle class="chart-gauge__primary" transform="rotate(-90 60 60)" stroke-dasharray="180 360" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
+                                                        </svg>
+                                                        <span class="chart-gauge__background">
+                                                            <span class="chart-gauge__background__img" style="background-image: url('img/articles-img.png');"></span>
+                                                        </span>
                                                     </span>
-                                                </span>
+                                                </div>
+
+                                                <div class="head-h3 color--bold color--lighter promo-progress__title">Что нужно знать о диабете</div>
                                             </div>
 
                                             <div class="promo-progress__box__description">
-                                                <div class="head-h3 color--bold color--lighter promo-progress__title">Что нужно знать о диабете</div>
-
                                                 <div class="read-more read-more--cabinet">
                                                     <div class="promo-progress__promo">Видео</div>
 
@@ -451,22 +475,24 @@
                                         </div>
 
                                         <div class="promo-progress__box">
-                                            <div class="promo-progress__box__img">
-                                                <span class="chart-gauge__wrapper chart-gauge__wrapper--radius">
-                                                    <svg viewBox="0 0 120 120" class="chart-gauge chart-gauge--middle" fill="none" stroke-width="2">
-                                                        <circle class="chart-gauge__base" r="57.32" cx="60" cy="60"></circle>
-                                                        <circle class="chart-gauge__primary" transform="rotate(-90 60 60)" stroke-dasharray="180 360" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
-                                                        <text x="60" y="20" dx="0" dy="1.3em" class="chart-gauge__label">60%</text>
-                                                    </svg>
-                                                    <span class="chart-gauge__background">
-                                                        <span class="chart-gauge__background__img" style="background-image: url('img/articles-img.png');"></span>
+                                            <div class="promo-progress__box__top">
+                                                <div class="promo-progress__box__img">
+                                                    <span class="chart-gauge__wrapper chart-gauge__wrapper--radius">
+                                                        <svg viewBox="0 0 120 120" class="chart-gauge chart-gauge--middle" fill="none" stroke-width="2">
+                                                            <circle class="chart-gauge__base" r="57.32" cx="60" cy="60"></circle>
+                                                            <circle class="chart-gauge__primary" transform="rotate(-90 60 60)" stroke-dasharray="180 360" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
+                                                            <text x="60" y="20" dx="0" dy="1.3em" class="chart-gauge__label">60%</text>
+                                                        </svg>
+                                                        <span class="chart-gauge__background">
+                                                            <span class="chart-gauge__background__img" style="background-image: url('img/articles-img.png');"></span>
+                                                        </span>
                                                     </span>
-                                                </span>
+                                                </div>
+
+                                                <div class="head-h3 color--bold color--lighter promo-progress__title">Что нужно знать о диабете</div>
                                             </div>
 
                                             <div class="promo-progress__box__description">
-                                                <div class="head-h3 color--bold color--lighter promo-progress__title">Что нужно знать о диабете</div>
-
                                                 <div class="read-more read-more--cabinet">
                                                     <div class="promo-progress__promo">Видео</div>
 
@@ -592,22 +618,24 @@
                                         </div>
 
                                         <div class="promo-progress__box">
-                                            <div class="promo-progress__box__img">
-                                                <span class="chart-gauge__wrapper chart-gauge__wrapper--radius">
-                                                    <svg viewBox="0 0 120 120" class="chart-gauge chart-gauge--middle" fill="none" stroke-width="2">
-                                                        <circle class="chart-gauge__base" r="57.32" cx="60" cy="60"></circle>
-                                                        <circle class="chart-gauge__primary" transform="rotate(-90 60 60)" stroke-dasharray="180 360" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
-                                                        <text x="60" y="20" dx="0" dy="1.3em" class="chart-gauge__label">60%</text>
-                                                    </svg>
-                                                    <span class="chart-gauge__background">
-                                                        <span class="chart-gauge__background__img" style="background-image: url('img/articles-img.png');"></span>
+                                            <div class="promo-progress__box__top">
+                                                <div class="promo-progress__box__img">
+                                                    <span class="chart-gauge__wrapper chart-gauge__wrapper--radius">
+                                                        <svg viewBox="0 0 120 120" class="chart-gauge chart-gauge--middle" fill="none" stroke-width="2">
+                                                            <circle class="chart-gauge__base" r="57.32" cx="60" cy="60"></circle>
+                                                            <circle class="chart-gauge__primary" transform="rotate(-90 60 60)" stroke-dasharray="180 360" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
+                                                            <text x="60" y="20" dx="0" dy="1.3em" class="chart-gauge__label">60%</text>
+                                                        </svg>
+                                                        <span class="chart-gauge__background">
+                                                            <span class="chart-gauge__background__img" style="background-image: url('img/articles-img.png');"></span>
+                                                        </span>
                                                     </span>
-                                                </span>
+                                                </div>
+
+                                                <div class="head-h3 color--bold color--lighter promo-progress__title">Что нужно знать о диабете</div>
                                             </div>
 
                                             <div class="promo-progress__box__description">
-                                                <div class="head-h3 color--bold color--lighter promo-progress__title">Что нужно знать о диабете</div>
-
                                                 <div class="read-more read-more--cabinet">
                                                     <div class="promo-progress__promo">Видео</div>
 
@@ -733,22 +761,24 @@
                                         </div>
 
                                         <div class="promo-progress__box">
-                                            <div class="promo-progress__box__img">
-                                                <span class="chart-gauge__wrapper chart-gauge__wrapper--radius">
-                                                    <svg viewBox="0 0 120 120" class="chart-gauge chart-gauge--middle" fill="none" stroke-width="2">
-                                                        <circle class="chart-gauge__base" r="57.32" cx="60" cy="60"></circle>
-                                                        <circle class="chart-gauge__primary" transform="rotate(-90 60 60)" stroke-dasharray="180 360" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
-                                                        <text x="60" y="20" dx="0" dy="1.3em" class="chart-gauge__label">60%</text>
-                                                    </svg>
-                                                    <span class="chart-gauge__background">
-                                                        <span class="chart-gauge__background__img" style="background-image: url('img/articles-img.png');"></span>
+                                            <div class="promo-progress__box__top">
+                                                <div class="promo-progress__box__img">
+                                                    <span class="chart-gauge__wrapper chart-gauge__wrapper--radius">
+                                                        <svg viewBox="0 0 120 120" class="chart-gauge chart-gauge--middle" fill="none" stroke-width="2">
+                                                            <circle class="chart-gauge__base" r="57.32" cx="60" cy="60"></circle>
+                                                            <circle class="chart-gauge__primary" transform="rotate(-90 60 60)" stroke-dasharray="180 360" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
+                                                            <text x="60" y="20" dx="0" dy="1.3em" class="chart-gauge__label">60%</text>
+                                                        </svg>
+                                                        <span class="chart-gauge__background">
+                                                            <span class="chart-gauge__background__img" style="background-image: url('img/articles-img.png');"></span>
+                                                        </span>
                                                     </span>
-                                                </span>
+                                                </div>
+
+                                                <div class="head-h3 color--bold color--lighter promo-progress__title">Что нужно знать о диабете</div>
                                             </div>
 
                                             <div class="promo-progress__box__description">
-                                                <div class="head-h3 color--bold color--lighter promo-progress__title">Что нужно знать о диабете</div>
-
                                                 <div class="read-more read-more--cabinet">
                                                     <div class="promo-progress__promo">Видео</div>
 
@@ -874,22 +904,24 @@
                                         </div>
 
                                         <div class="promo-progress__box">
-                                            <div class="promo-progress__box__img">
-                                                <span class="chart-gauge__wrapper chart-gauge__wrapper--radius">
-                                                    <svg viewBox="0 0 120 120" class="chart-gauge chart-gauge--middle" fill="none" stroke-width="2">
-                                                        <circle class="chart-gauge__base" r="57.32" cx="60" cy="60"></circle>
-                                                        <circle class="chart-gauge__primary" transform="rotate(-90 60 60)" stroke-dasharray="180 360" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
-                                                        <text x="60" y="20" dx="0" dy="1.3em" class="chart-gauge__label">60%</text>
-                                                    </svg>
-                                                    <span class="chart-gauge__background">
-                                                        <span class="chart-gauge__background__img" style="background-image: url('img/articles-img.png');"></span>
+                                            <div class="promo-progress__box__top">
+                                                <div class="promo-progress__box__img">
+                                                    <span class="chart-gauge__wrapper chart-gauge__wrapper--radius">
+                                                        <svg viewBox="0 0 120 120" class="chart-gauge chart-gauge--middle" fill="none" stroke-width="2">
+                                                            <circle class="chart-gauge__base" r="57.32" cx="60" cy="60"></circle>
+                                                            <circle class="chart-gauge__primary" transform="rotate(-90 60 60)" stroke-dasharray="180 360" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
+                                                            <text x="60" y="20" dx="0" dy="1.3em" class="chart-gauge__label">60%</text>
+                                                        </svg>
+                                                        <span class="chart-gauge__background">
+                                                            <span class="chart-gauge__background__img" style="background-image: url('img/articles-img.png');"></span>
+                                                        </span>
                                                     </span>
-                                                </span>
+                                                </div>
+
+                                                <div class="head-h3 color--bold color--lighter promo-progress__title">Что нужно знать о диабете</div>
                                             </div>
 
                                             <div class="promo-progress__box__description">
-                                                <div class="head-h3 color--bold color--lighter promo-progress__title">Что нужно знать о диабете</div>
-
                                                 <div class="read-more read-more--cabinet">
                                                     <div class="promo-progress__promo">Видео</div>
 
@@ -1015,22 +1047,24 @@
                                         </div>
 
                                         <div class="promo-progress__box">
-                                            <div class="promo-progress__box__img">
-                                                <span class="chart-gauge__wrapper chart-gauge__wrapper--radius">
-                                                    <svg viewBox="0 0 120 120" class="chart-gauge chart-gauge--middle" fill="none" stroke-width="2">
-                                                        <circle class="chart-gauge__base" r="57.32" cx="60" cy="60"></circle>
-                                                        <circle class="chart-gauge__primary" transform="rotate(-90 60 60)" stroke-dasharray="180 360" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
-                                                        <text x="60" y="20" dx="0" dy="1.3em" class="chart-gauge__label">60%</text>
-                                                    </svg>
-                                                    <span class="chart-gauge__background">
-                                                        <span class="chart-gauge__background__img" style="background-image: url('img/articles-img.png');"></span>
+                                            <div class="promo-progress__box__top">
+                                                <div class="promo-progress__box__img">
+                                                    <span class="chart-gauge__wrapper chart-gauge__wrapper--radius">
+                                                        <svg viewBox="0 0 120 120" class="chart-gauge chart-gauge--middle" fill="none" stroke-width="2">
+                                                            <circle class="chart-gauge__base" r="57.32" cx="60" cy="60"></circle>
+                                                            <circle class="chart-gauge__primary" transform="rotate(-90 60 60)" stroke-dasharray="180 360" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
+                                                            <text x="60" y="20" dx="0" dy="1.3em" class="chart-gauge__label">60%</text>
+                                                        </svg>
+                                                        <span class="chart-gauge__background">
+                                                            <span class="chart-gauge__background__img" style="background-image: url('img/articles-img.png');"></span>
+                                                        </span>
                                                     </span>
-                                                </span>
+                                                </div>
+
+                                                <div class="head-h3 color--bold color--lighter promo-progress__title">Что нужно знать о диабете</div>
                                             </div>
 
                                             <div class="promo-progress__box__description">
-                                                <div class="head-h3 color--bold color--lighter promo-progress__title">Что нужно знать о диабете</div>
-
                                                 <div class="read-more read-more--cabinet">
                                                     <div class="promo-progress__promo">Видео</div>
 
@@ -1170,7 +1204,7 @@
 
                                             <div class="promo-article__play">
                                                 <svg class="">
-                                                    <use xlink:href="icons/icons.svg#icon-play-full"></use>
+                                                    <use xlink:href="icons/icons.svg#icon-play-white"></use>
                                                 </svg>
                                             </div>
 
@@ -1180,8 +1214,6 @@
                                         </a>
 
                                         <div class="promo-article__description ">
-                                            <a href="#" class="promo-article__notify">Что нужно знать о диабете</a>
-
                                             <div class="promo-article__item__title">
                                                 <a href="#">Осложнения сахарного диабета</a>
                                             </div>
@@ -1200,19 +1232,7 @@
 
                                                             264
                                                         </li>
-
-                                                        <li>
-                                                            <svg class="" width="20px" height="15px">
-                                                                <use xlink:href="icons/icons.svg#icon-comments"></use>
-                                                            </svg>
-
-                                                            7
-                                                        </li>
                                                     </ul>
-                                                </div>
-
-                                                <div class="promo-article__info__date promo-article__info__date--static">
-                                                    12 август 2017
                                                 </div>
                                             </div>
 
@@ -1246,7 +1266,7 @@
 
                                             <div class="promo-article__play">
                                                 <svg class="">
-                                                    <use xlink:href="icons/icons.svg#icon-play-full"></use>
+                                                    <use xlink:href="icons/icons.svg#icon-play-white"></use>
                                                 </svg>
                                             </div>
 
@@ -1256,8 +1276,6 @@
                                         </a>
 
                                         <div class="promo-article__description ">
-                                            <a href="#" class="promo-article__notify">Что нужно знать о диабете</a>
-
                                             <div class="promo-article__item__title">
                                                 <a href="#">Осложнения сахарного диабета</a>
                                             </div>
@@ -1276,19 +1294,7 @@
 
                                                             264
                                                         </li>
-
-                                                        <li>
-                                                            <svg class="" width="20px" height="15px">
-                                                                <use xlink:href="icons/icons.svg#icon-comments"></use>
-                                                            </svg>
-
-                                                            7
-                                                        </li>
                                                     </ul>
-                                                </div>
-
-                                                <div class="promo-article__info__date promo-article__info__date--static">
-                                                    12 август 2017
                                                 </div>
                                             </div>
 
@@ -1322,7 +1328,7 @@
 
                                             <div class="promo-article__play">
                                                 <svg class="">
-                                                    <use xlink:href="icons/icons.svg#icon-play-full"></use>
+                                                    <use xlink:href="icons/icons.svg#icon-play-white"></use>
                                                 </svg>
                                             </div>
 
@@ -1332,8 +1338,6 @@
                                         </a>
 
                                         <div class="promo-article__description ">
-                                            <a href="#" class="promo-article__notify">Что нужно знать о диабете</a>
-
                                             <div class="promo-article__item__title">
                                                 <a href="#">Осложнения сахарного диабета</a>
                                             </div>
@@ -1352,19 +1356,7 @@
 
                                                             264
                                                         </li>
-
-                                                        <li>
-                                                            <svg class="" width="20px" height="15px">
-                                                                <use xlink:href="icons/icons.svg#icon-comments"></use>
-                                                            </svg>
-
-                                                            7
-                                                        </li>
                                                     </ul>
-                                                </div>
-
-                                                <div class="promo-article__info__date promo-article__info__date--static">
-                                                    12 август 2017
                                                 </div>
                                             </div>
 
@@ -1398,7 +1390,7 @@
 
                                             <div class="promo-article__play">
                                                 <svg class="">
-                                                    <use xlink:href="icons/icons.svg#icon-play-full"></use>
+                                                    <use xlink:href="icons/icons.svg#icon-play-white"></use>
                                                 </svg>
                                             </div>
 
@@ -1408,8 +1400,6 @@
                                         </a>
 
                                         <div class="promo-article__description ">
-                                            <a href="#" class="promo-article__notify">Что нужно знать о диабете</a>
-
                                             <div class="promo-article__item__title">
                                                 <a href="#">Осложнения сахарного диабета</a>
                                             </div>
@@ -1428,19 +1418,7 @@
 
                                                             264
                                                         </li>
-
-                                                        <li>
-                                                            <svg class="" width="20px" height="15px">
-                                                                <use xlink:href="icons/icons.svg#icon-comments"></use>
-                                                            </svg>
-
-                                                            7
-                                                        </li>
                                                     </ul>
-                                                </div>
-
-                                                <div class="promo-article__info__date promo-article__info__date--static">
-                                                    12 август 2017
                                                 </div>
                                             </div>
 
@@ -1474,7 +1452,7 @@
 
                                             <div class="promo-article__play">
                                                 <svg class="">
-                                                    <use xlink:href="icons/icons.svg#icon-play-full"></use>
+                                                    <use xlink:href="icons/icons.svg#icon-play-white"></use>
                                                 </svg>
                                             </div>
 
@@ -1484,8 +1462,6 @@
                                         </a>
 
                                         <div class="promo-article__description ">
-                                            <a href="#" class="promo-article__notify">Что нужно знать о диабете</a>
-
                                             <div class="promo-article__item__title">
                                                 <a href="#">Осложнения сахарного диабета</a>
                                             </div>
@@ -1504,19 +1480,7 @@
 
                                                             264
                                                         </li>
-
-                                                        <li>
-                                                            <svg class="" width="20px" height="15px">
-                                                                <use xlink:href="icons/icons.svg#icon-comments"></use>
-                                                            </svg>
-
-                                                            7
-                                                        </li>
                                                     </ul>
-                                                </div>
-
-                                                <div class="promo-article__info__date promo-article__info__date--static">
-                                                    12 август 2017
                                                 </div>
                                             </div>
 
@@ -1543,6 +1507,164 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <br><br>
+
+                            <div class="promo-article">
+                                <div class="head-h2 promo-article__title color--middle color--promo">Популярное видео</div>
+
+                                <div class="promo-article__wrapper promo-article__wrapper--many">
+                                    <div class="promo-article__block">
+                                        <div class="promo-article__item">
+                                            <a href="#" class="promo-article__img">
+                                                <img src="img/player-bg.png" alt="">
+
+                                                <div class="promo-article__play">
+                                                    <svg class="">
+                                                        <use xlink:href="icons/icons.svg#icon-play-white"></use>
+                                                    </svg>
+                                                </div>
+                                            </a>
+
+                                            <div class="promo-article__description">
+                                                <div class="promo-article__item__title">
+                                                    <a href="#">Осложнения сахарного диабета</a>
+                                                </div>
+
+                                                <div class="promo-article__text">
+                                                    <p>Как предотвратить и замедлить развитие осложнений.</p>
+                                                </div>
+
+                                                <div class="promo-article__info">
+                                                    <div class="promo-article__info__view">
+                                                        <ul class="promo-article__info__list">
+                                                            <li>
+                                                                <svg class="" width="20px" height="15px">
+                                                                    <use xlink:href="icons/icons.svg#icon-views"></use>
+                                                                </svg>
+
+                                                                264
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="promo-article__profile">
+                                                <div class="promo-article__profile__img">
+                                                    <img src="img/author-foto.png" alt="">
+                                                </div>
+
+                                                <div class="promo-article__profile__description">
+                                                    <a href="#" class="promo-article__profile__title">Галстян Гагик Радикович</a>
+
+                                                    <p>Диетолог, эндокринолог, доктор медицинских наук, профессор, врач высшей категории, главный научный сотрудник ФГБУ "НМИЦ эндокринологии" Минздрава России</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="promo-article__block">
+                                        <div class="promo-article__item">
+                                            <a href="#" class="promo-article__img">
+                                                <img src="img/player-bg.png" alt="">
+
+                                                <div class="promo-article__play">
+                                                    <svg class="">
+                                                        <use xlink:href="icons/icons.svg#icon-play-white"></use>
+                                                    </svg>
+                                                </div>
+                                            </a>
+
+                                            <div class="promo-article__description">
+                                                <div class="promo-article__item__title">
+                                                    <a href="#">Осложнения сахарного диабета</a>
+                                                </div>
+
+                                                <div class="promo-article__text">
+                                                    <p>Как предотвратить и замедлить развитие осложнений.</p>
+                                                </div>
+
+                                                <div class="promo-article__info">
+                                                    <div class="promo-article__info__view">
+                                                        <ul class="promo-article__info__list">
+                                                            <li>
+                                                                <svg class="" width="20px" height="15px">
+                                                                    <use xlink:href="icons/icons.svg#icon-views"></use>
+                                                                </svg>
+
+                                                                264
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="promo-article__profile">
+                                                <div class="promo-article__profile__img">
+                                                    <img src="img/author-foto.png" alt="">
+                                                </div>
+
+                                                <div class="promo-article__profile__description">
+                                                    <a href="#" class="promo-article__profile__title">Галстян Гагик Радикович</a>
+
+                                                    <p>Диетолог, эндокринолог, доктор медицинских наук, профессор, врач высшей категории, главный научный сотрудник ФГБУ "НМИЦ эндокринологии" Минздрава России</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="promo-article__block">
+                                        <div class="promo-article__item">
+                                            <a href="#" class="promo-article__img">
+                                                <img src="img/player-bg.png" alt="">
+
+                                                <div class="promo-article__play">
+                                                    <svg class="">
+                                                        <use xlink:href="icons/icons.svg#icon-play-white"></use>
+                                                    </svg>
+                                                </div>
+                                            </a>
+
+                                            <div class="promo-article__description">
+                                                <div class="promo-article__item__title">
+                                                    <a href="#">Осложнения сахарного диабета</a>
+                                                </div>
+
+                                                <div class="promo-article__text">
+                                                    <p>Как предотвратить и замедлить развитие осложнений.</p>
+                                                </div>
+
+                                                <div class="promo-article__info">
+                                                    <div class="promo-article__info__view">
+                                                        <ul class="promo-article__info__list">
+                                                            <li>
+                                                                <svg class="" width="20px" height="15px">
+                                                                    <use xlink:href="icons/icons.svg#icon-views"></use>
+                                                                </svg>
+
+                                                                264
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="promo-article__profile">
+                                                <div class="promo-article__profile__img">
+                                                    <img src="img/author-foto.png" alt="">
+                                                </div>
+
+                                                <div class="promo-article__profile__description">
+                                                    <a href="#" class="promo-article__profile__title">Галстян Гагик Радикович</a>
+
+                                                    <p>Диетолог, эндокринолог, доктор медицинских наук, профессор, врач высшей категории, главный научный сотрудник ФГБУ "НМИЦ эндокринологии" Минздрава России</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1554,28 +1676,118 @@
 
         <div class="footer">
             <div class="footer__container">
-                <div class="footer__content">
-                    <div class="footer__main">
-                        <a href="#" class="footer__logo">
-                            <img src="img/logo.svg" class="logo logo--mini" alt="">
-                        </a>
+                <div class="footer__logo">
+                    <a href="#" class="logo logo--mini"></a>
+                </div>
 
-                        <p>© ООО «ЮСБ Фарма», 2018</p>
-                        <p>Данный сайт предназначен исключительно для работников здравоохранения</p>
+                <div class="footer__main">
+                    <div class="footer__nav">
+                        <ul class="footer__list footer__list--mini">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Школа диабета</a></li>
+                            <li><a href="#">Видео</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">О проекте</a></li>
+                            <li><a href="#">Отказаться от подписки</a></li>
+                            <li><a href="#">САйт РДА</a></li>
+                        </ul>
+
+                        <ul class="footer__list footer__list--big">
+                            <li><a href="#">Условия обработки персональных данных</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Для специалистов</a></li>
+                            <li><a href="#">Политика использования файлов cookie</a></li>
+                        </ul>
                     </div>
 
-                    <div class="footer__side">
-                        <svg class="" width="50px" height="50px">
-                            <use xlink:href="icons/icons.svg#18"></use>
-                        </svg>
+                    <div class="footer__description">
+                        <p>© ООО «Джонсон &amp; Джонсон», Россия, 2018 г.<br>Этот сайт принадлежит ООО «Джонсон &amp; Джонсон», которая полностью отвечает за его содержимое.<br>Сайт предназначен для посетителей из Российской Федерации</p>
+                        <p>Информация, размещенная на сайте, носит характер<br> рекомендаций  и не может считаться консультацией медицинского работника  или заменить ее. Всегда консультируйтесь со своим лечащим врачом перед тем как следовать той или иной рекомендации. </p>
                     </div>
+                </div>
+
+                <div class="footer__slogan">
+                    <!--<div class="footer__slogan__text footer__slogan__text&#45;&#45;big">Имеются   противопоказания</div>-->
+
+                    <!--<div class="footer__slogan__text">проконсультируйтесь  со  специалистом</div>-->
+
+                    <table class="footer__slogan__table">
+                        <td>И</td>
+                        <td>н</td>
+                        <td>ф</td>
+                        <td>о</td>
+                        <td>р</td>
+                        <td>м</td>
+                        <td>а</td>
+                        <td>ц</td>
+                        <td>и</td>
+                        <td>я,</td>
+                        <td class="footer__slogan__table__break"></td>
+                        <td>С</td>
+                        <td>о</td>
+                        <td>д</td>
+                        <td>е</td>
+                        <td>р</td>
+                        <td>ж</td>
+                        <td>а</td>
+                        <td>щ</td>
+                        <td>а</td>
+                        <td>я</td>
+                        <td>с</td>
+                        <td>я</td>
+                        <td>&nbsp;</td>
+                        <td>н</td>
+                        <td>а</td>
+                        <td class="footer__slogan__table__break"></td>
+                        <td>с</td>
+                        <td>а</td>
+                        <td>й</td>
+                        <td>т</td>
+                        <td>е,</td>
+                    </table>
+
+                    <table class="footer__slogan__table footer__slogan__table--small">
+                        <tr>
+                            <td>Н</td>
+                            <td>е</td>
+                            <td>&nbsp;</td>
+                            <td>з</td>
+                            <td>а</td>
+                            <td>м</td>
+                            <td>е</td>
+                            <td>н</td>
+                            <td>я</td>
+                            <td>е</td>
+                            <td>т</td>
+                            <td class="footer__slogan__table__break"></td>
+                            <td>К</td>
+                            <td>о</td>
+                            <td>н</td>
+                            <td>с</td>
+                            <td>у</td>
+                            <td>л</td>
+                            <td>ь</td>
+                            <td>т</td>
+                            <td>а</td>
+                            <td>ц</td>
+                            <td>и</td>
+                            <td>и</td>
+                            <td class="footer__slogan__table__break"></td>
+                            <td>В</td>
+                            <td>р</td>
+                            <td>а</td>
+                            <td>ч</td>
+                            <td>а</td>
+                            <!--<td class="">&nbsp;&nbsp;</td>-->
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
     </main>
     
-    <div class="modal modal--side right fade" id="favourite-side1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal__close">
+    <div class="modal right fade" id="favourite-side1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal__close modal__close--main">
             <button type="button" class="btn " data-dismiss="modal">
                 <svg>
                     <use xlink:href="icons/icons.svg#icon-close-big"></use>
@@ -1777,8 +1989,8 @@
         </div>
     </div>
     
-    <div class="modal modal--side right fade" id="favourite-side2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal__close">
+    <div class="modal right fade" id="favourite-side2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal__close modal__close--main">
             <button type="button" class="btn " data-dismiss="modal">
                 <svg>
                     <use xlink:href="icons/icons.svg#icon-close-big"></use>
@@ -1819,8 +2031,8 @@
         </div>
     </div>
     
-    <div class="modal modal--side right fade" id="favourite-side3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal__close">
+    <div class="modal right fade" id="favourite-side3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal__close modal__close--main">
             <button type="button" class="btn " data-dismiss="modal">
                 <svg>
                     <use xlink:href="icons/icons.svg#icon-close-big"></use>
@@ -1903,11 +2115,11 @@
         </div>
     </div>
     
-    <div class="modal modal--side right fade" id="favourite-side4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal__close">
+    <div class="modal right fade" id="favourite-side4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal__close modal__close--main">
             <button type="button" class="btn " data-dismiss="modal">
                 <svg>
-                    <use xlink:href="icons/icons.svg#icon-close"></use>
+                    <use xlink:href="icons/icons.svg#icon-close-big"></use>
                 </svg>
             </button>
         </div>
@@ -1925,180 +2137,103 @@
                     </div>
     
                     <div class="favourite-side__content">
-                        <div class="promo-tab promo-tab--modal">
-                            <ul class="nav nav-tabs promo-tab__nav" role="tablist">
-                                <li role="presentation" class="active">
-                                    <a href="#profile-registration" class="promo-tab__nav__link" aria-controls="profile-registration" role="tab" data-toggle="tab">
-                                        <span class="promo-tab__nav__link__cell">
-                                            <span class="promo-tab__nav__link__text">Регистрация</span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li role="presentation" class="">
-                                    <a href="#profile-login" class="promo-tab__nav__link" aria-controls="profile-login" role="tab" data-toggle="tab">
-                                        <span class="promo-tab__nav__link__cell">
-                                            <span class="promo-tab__nav__link__text">Вход</span>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
+                        <div class="favourite-side__block">
+                            <div class="promo-tab promo-tab--modal">
+                                <ul class="nav nav-tabs promo-tab__nav" role="tablist">
+                                    <li role="presentation" class="">
+                                        <a href="#profile-registration" class="promo-tab__nav__link" aria-controls="profile-registration" role="tab" data-toggle="tab">
+                                            <span>Регистрация</span>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="active">
+                                        <a href="#profile-login" class="promo-tab__nav__link" aria-controls="profile-login" role="tab" data-toggle="tab">
+                                            <span>Вход</span>
+                                        </a>
+                                    </li>
+                                </ul>
     
-                            <div class="tab-content promo-tab__content">
-                                <div role="tabpanel" class="tab-pane active" id="profile-registration">
-                                    <div class="user-registration">
-                                        <div class="head-h2 color--main">Пройдите регистрацию</div>
+                                <div class="tab-content promo-tab__content">
+                                    <div role="tabpanel" class="tab-pane " id="profile-registration">
+                                        <div class="user-registration">
+                                            <div class="head-h2 color--main">Мы хотим вас поддержать!</div>
     
-                                        <p>Для получения доступа к вебинарам вам необходимо зарегистрироваться.</p>
+                                            <p>Чтобы не пропустить новые мотивирующие обучающие видео от наших экспертов, а также полезные статьи, мы попросим вас зарегистрироваться. </p>
     
-                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <p><a href="#" class="">Уже регистрировались? </a></p>
                                             </div>
-                                        </div>
     
-                                        <div class="promo-login promo-login--modal">
-                                            <div class="favourite-side__block__row">
+                                            <div class="promo-login promo-login--modal">
                                                 <div class="favourite-side__block">
-                                                    <div class="input__wrapper">
-                                                        <input type="text" class="input" placeholder="Ваше имя">
+                                                    <input type="text" class="input" placeholder="Ваше имя">
+                                                </div>
     
-                                                        <svg class="input__clear">
-                                                            <use xlink:href="icons/icons.svg#icon-close-x"></use>
-                                                        </svg>
-                                                    </div>
+                                                <div class="favourite-side__block">
+                                                    <input type="email" class="input" placeholder="Электронная почта">
+                                                </div>
+    
+                                                <div class="favourite-side__block">
+                                                    <input type="text" class="input" placeholder="Пароль">
                                                 </div>
                                             </div>
     
-                                            <div class="favourite-side__block__row">
-                                                <div class="favourite-side__block">
-                                                    <select name="" id="" title="Специализация">
-                                                        <option value="">Педиатрия</option>
-                                                        <option value="">Оториноларингология</option>
-                                                        <option value="">Аллергология</option>
-                                                        <option value="">Дерматология</option>
-                                                        <option value="">Другое (указать)</option>
-                                                    </select>
-    
-                                                    <!--<div class="input__wrapper">-->
-                                                        <!--<input type="text" class="input" placeholder="Специализация">-->
-    
-                                                        <!--<svg class="input__clear">-->
-                                                            <!--<use xlink:href="icons/icons.svg#icon-close-x"></use>-->
-                                                        <!--</svg>-->
-                                                    <!--</div>-->
-                                                </div>
-                                            </div>
-    
-                                            <div class="favourite-side__block__row">
-                                                <div class="favourite-side__block">
-                                                    <div class="input__wrapper">
-                                                        <input type="text" class="input" placeholder="Электронная почта">
-    
-                                                        <svg class="input__clear">
-                                                            <use xlink:href="icons/icons.svg#icon-close-x"></use>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-    
-                                            <div class="favourite-side__block__row">
-                                                <div class="favourite-side__block">
-                                                    <div class="input__wrapper">
-                                                        <input type="password" class="input" placeholder="Пароль">
-    
-                                                        <svg class="input__clear">
-                                                            <use xlink:href="icons/icons.svg#icon-close-x"></use>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-    
-                                                <div class="favourite-side__block">
-                                                    <div class="input__wrapper">
-                                                        <input type="password" class="input" placeholder="Повторите пароль">
-    
-                                                        <svg class="input__clear">
-                                                            <use xlink:href="icons/icons.svg#icon-close-x"></use>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <div class="promo-label__group promo-label__group--login">
                                                     <label class="promo-label">
                                                         <input type="checkbox" checked>
     
-                                                        <span>Я даю <a href="#">согласие</a> на обработку персональных данных в соответствии с Политикой конфиденциальности</span>
+                                                        <span>Я согласен с <a href="#">Условиями использования персональных</a> данных и <a href="#">Политикой Конфиденциальности</a></span>
+                                                    </label>
+    
+                                                    <label class="promo-label">
+                                                        <input type="checkbox" checked>
+    
+                                                        <span>Я согласен получать от ООО «Джонсон &amp; Джонсон» новостную рассылку и информацию о действующих акциях </span>
                                                     </label>
                                                 </div>
                                             </div>
+    
+                                            <button class="btn btn__promo">Зарегистрироваться</button>
                                         </div>
     
-                                        <button class="btn btn__promo">Зарегистрироваться</button>
-                                    </div>
+                                        <div class="user-thank">
+                                            <div class="favourite-side__title color--main">Спасибо!</div>
     
-                                    <div class="user-thank">
-                                        <div class="favourite-side__title color--main">Спасибо!</div>
+                                            <p>Мы вам отправили приветственное письмо с просьбой завершить регистрацию. Не забудьте сделать это в ближайшее время: скорее всего, письмо уже в вашем почтовом ящике.</p>
     
-                                        <p>Мы вам отправили приветственное письмо с просьбой завершить регистрацию. Не забудьте сделать это в ближайшее время: скорее всего, письмо уже в вашем почтовом ящике.</p>
+                                            <br>
     
-                                        <br>
-    
-                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <button class="btn btn__promo" type="button" data-dismiss="modal">Закрыть</button>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
     
-                                <div role="tabpanel" class="tab-pane " id="profile-login">
-                                    <div class="user-login" id="user-login">
-                                        <div class="head-h2 color--main">Пожалуйста, войдите!</div>
+                                    <div role="tabpanel" class="tab-pane active" id="profile-login">
+                                        <div class="user-login" id="user-login">
+                                            <div class="head-h2 color--main">Пожалуйста, войдите!</div>
     
-                                        <p>Авторизуйтесь, и вы сможете, например, задать вопрос нашим экспертам задолго до вебинара.</p>
+                                            <p>Авторизуйтесь, и вы сможете, например, задать вопрос нашим экспертам задолго до вебинара.</p>
     
-                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <p><a href="#">Еще нет регистрации?</a></p>
                                             </div>
-                                        </div>
     
-                                        <div class="promo-login promo-login--modal">
-                                            <div class="favourite-side__block__row">
+                                            <div class="promo-login promo-login--modal">
                                                 <div class="favourite-side__block has-error">
                                                     <label class="control-label">Направильная почта</label>
     
-                                                    <div class="input__wrapper">
-                                                        <input type="email" class="input form-control" placeholder="Электронная почта">
-    
-                                                        <svg class="input__clear">
-                                                            <use xlink:href="icons/icons.svg#icon-close-x"></use>
-                                                        </svg>
-                                                    </div>
+                                                    <input type="email" class="input form-control" placeholder="Электронная почта">
                                                 </div>
-                                            </div>
     
-                                            <div class="favourite-side__block__row">
                                                 <div class="favourite-side__block">
-                                                    <div class="input__wrapper">
-                                                        <input type="password" class="input" placeholder="Пароль">
-    
-                                                        <svg class="input__clear">
-                                                            <use xlink:href="icons/icons.svg#icon-close-x"></use>
-                                                        </svg>
-                                                    </div>
+                                                    <input type="password" class="input" placeholder="Пароль">
+                                                </div>
+                                                <div class="">
+                                                    <a href="#" id="forget-password">Забыли пароль?</a>
                                                 </div>
                                             </div>
     
-                                            <div class="">
-                                                <a href="#" id="forget-password">Забыли пароль?</a>
-                                            </div>
-                                        </div>
-    
-                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <div class="promo-label__group promo-label__group--login">
                                                     <label class="promo-label">
@@ -2108,51 +2243,37 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                        </div>
     
-                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <button class="btn btn__promo">Войти</button>
                                             </div>
                                         </div>
-                                    </div>
     
-                                    <div class="recover-step1" id="recover-step1">
-                                        <div class="head-h2 color--main">Восстановление пароля</div>
+                                        <div class="recover-step1" id="recover-step1">
+                                            <div class="head-h2 color--main">Восстановление пароля</div>
     
-                                        <p>Укажите почту, на которую будет отправлена ссылка для восстановления пароля.</p>
+                                            <p>Укажите почту, на которую будет отправлена ссылка для восстановления пароля.</p>
     
-                                        <br>
+                                            <br>
     
-                                        <div class="promo-login">
-                                            <div class="favourite-side__block__row">
+                                            <div class="promo-login">
                                                 <div class="favourite-side__block">
-                                                    <div class="input__wrapper">
-                                                        <input type="email" class="input" placeholder="Электронная почта">
-    
-                                                        <svg class="input__clear">
-                                                            <use xlink:href="icons/icons.svg#icon-close-x"></use>
-                                                        </svg>
-                                                    </div>
+                                                    <input type="email" class="input" placeholder="Электронная почта">
                                                 </div>
                                             </div>
-                                        </div>
     
-                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <button class="btn btn__promo" id="user-login-next">Хорошо</button>
                                             </div>
                                         </div>
-                                    </div>
     
-                                    <div class="recover-step2" id="recover-step2">
-                                        <div class="head-h2 color--main">Восстановление пароля</div>
+                                        <div class="recover-step2" id="recover-step2">
+                                            <div class="head-h2 color--main">Восстановление пароля</div>
     
-                                        <p>Мы вам отправили письмо с ссылкой для восстановления пароля. Перейдите по ссылке и укажите новый пароль для вашего аккаунта.</p>
+                                            <p>Мы вам отправили письмо с ссылкой для восстановления пароля. Перейдите по ссылке и укажите новый пароль для вашего аккаунта.</p>
     
-                                        <br>
+                                            <br>
     
-                                        <div class="favourite-side__block__row">
                                             <div class="favourite-side__block">
                                                 <button class="btn btn__promo">Хорошо</button>
                                             </div>
@@ -2168,35 +2289,22 @@
         </div>
     </div>
     
-    <div class="modal modal--simple fade" id="modal-intro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="favourite-side5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
     
-                <div class="head-h4 modal__title">Обратите внимание!</div>
+                <label class="promo-label promo-label--modal promo-label--white">
+                    <input type="checkbox" checked>
     
-                <p>Данный сайт содержит профессиональную специализированную информацию. Согласно действующему законодательству, данные материалы могут быть доступны только для работников здравоохранения. </p>
+                    <span>Пользуясь этим сайтом, я подтверждаю, что я ознакомлен с <a href="#" id="favourite-side__trigger2">Политикой Конфиденциальности</a> компании  ООО «Джонсон&Джонсон» и согласен с <a href="#" id="favourite-side__trigger1">Условиями использования персональных</a></span>
+                </label>
     
-                <p>Я подтверждаю, что являюсь специалистом с медицинским или фармацевтическим образованием и информация, полученная на сайте, будет использована мной только в профессиональной деятельности.</p>
+                <br><br><br>
     
-                <div class="modal__button">
-                    <button class="btn btn__promo">Я подтверждаю</button>
-    
-                    <button class="btn btn__promo btn__promo--simple">Не подтверждаю</button>
-                </div>
-    
-            </div>
-        </div>
-    </div>
-    
-    <div class="modal modal--simple fade" id="modal-access" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-    
-                <div class="head-h4 modal__title">Доступ к сайту закрыт</div>
-    
-                <p>Вы подтвердили, что не являетесь специалистом с медицинским или фармацевтическим образованием, поэтому не можете получить доступ к сайту.</p>
-    
-                <p>Данный сайт содержит профессиональную специализированную информацию. Согласно действующему законодательству, данные материалы могут бы��ь доступны только для работников здравоохранения. </p>
+                <ul class="modal__accept">
+                    <li><button class="btn btn__promo btn__promo--clear" data-dismiss="modal">Соглашаюсь</button></li>
+                    <li><button class="btn btn__promo btn__promo--border" data-dismiss="modal">Нет</button></li>
+                </ul>
     
             </div>
         </div>
