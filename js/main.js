@@ -34484,6 +34484,7 @@ $(document).ready(function() {
     $('.calendar-item').datepicker({
         language: 'ru',
         autoclose: true,
+        disableTouchKeyboard: true,
         // format: 'MM',
         // minViewMode: 'days',
         // maxViewMode: 'days',
