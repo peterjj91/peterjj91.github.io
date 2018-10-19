@@ -34481,7 +34481,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('.calendar-item').datepicker({
+    $('.date').datepicker({
         language: 'ru',
         autoclose: true,
         disableTouchKeyboard: true,
